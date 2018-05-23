@@ -1,0 +1,30 @@
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*************************\
+* Formatting contact info *
+\*************************/
+
+.contact-info {
+  display: flex;
+  flex: row wrap;
+  justify-content: space-around;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 1.5rem;
+}
+
+.contact p {
+  font-size: 1.25rem;
+}
+
+.contact a {
+  font-size: 1.25rem;
+}

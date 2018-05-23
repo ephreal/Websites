@@ -1,0 +1,15 @@
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.promotional {
+  width: 50%;
+  height: 460px;
+  background: url("../../img/jpg/Lamp.jpg") no-repeat;
+  background-size: contain;
+  background-position: top;
+  display: inline-block;
+}

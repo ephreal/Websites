@@ -1,0 +1,60 @@
+/**********************\
+* Main header elements *
+\**********************/
+.main-header {
+  display: flex;
+  background-size: contain;
+  flex-direction: column;
+  height: 12rem;
+}
+/***********************\
+* Header at top of page *
+\***********************/
+
+/* Logo container in header */
+.logo-container {
+  height: 9rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 4rem;
+  font-style: italic;
+}
+
+/* Main logo */
+.header-logo {
+  width: 100%;
+  background: url("../../img/jpg/AspenlineLogoTablet12.01.2017.jpg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/********************\
+* nav menu in header *
+\********************/
+.navmenu {
+  border-top: 4px solid silver;
+  border-bottom: 4px solid silver;
+  width: 100%;
+  height: 3rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/*************************\
+* Set nav list properties *
+\*************************/
+.navmenu ul a>li {
+  font-size: 1.25rem;
+  text-align: center;
+  vertical-align: middle;
+  font-family: sans-serif;
+  height: 100%;
+  width: 10rem;
+}

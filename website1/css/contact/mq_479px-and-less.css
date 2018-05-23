@@ -1,0 +1,31 @@
+main {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*************************\
+* Formatting contact info *
+\*************************/
+
+.contact h1 {
+  font-size: 2rem;
+}
+
+.contact p {
+  font-size: 1.5rem;
+}
+
+.contact a {
+  font-size: 1.5rem;
+}
+
+/**************************************\
+* Overriding how the members section   *
+* of the footer looks on small screens *
+\**************************************/
+.members {
+  height: 15%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

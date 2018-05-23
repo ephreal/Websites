@@ -1,0 +1,22 @@
+main {
+  width: 100%;
+}
+
+/*************************\
+* Formatting testimonials *
+\*************************/
+.testimonials h1 {
+  text-align: center;
+}
+
+.testimonial {
+  margin: 2rem;
+  text-align: left;
+  border-bottom: 2px solid silver;
+}
+
+.testimonial-footer {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-around;
+}

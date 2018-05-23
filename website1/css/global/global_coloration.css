@@ -1,0 +1,37 @@
+body {
+  background-color: #256335;
+}
+
+/********************\
+* Navmenu coloration *
+\********************/
+
+.navmenu {
+  background-color: #404020;
+}
+
+/* List element coloration */
+.navmenu ul a>li {
+  background: linear-gradient(#206050,black);
+}
+/* Currently active menu coloration */
+.navmenu ul>a>li.active {
+  /* Original color:
+   * background: linear-gradient(#164025,black);
+   */
+   background: linear-gradient(#808060, black);
+}
+
+/* Color change when mousing over nav links */
+
+.navmenu ul a>li:hover {
+  background: linear-gradient(#808060, black);
+}
+
+/********************\
+* Footer Coloration  *
+\********************/
+.members {
+  color: white;
+  background-color: #404020;
+}

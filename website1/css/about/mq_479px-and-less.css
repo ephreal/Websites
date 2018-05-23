@@ -1,0 +1,16 @@
+main {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/**************************************\
+* Overriding how the members section   *
+* of the footer looks on small screens *
+\**************************************/
+.members {
+  height: 15%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

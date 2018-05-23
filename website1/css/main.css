@@ -1,0 +1,47 @@
+/* resets  as needed */
+html, body, header, figure, nav, ul, li, main, article, section {
+  margin: 0;
+  padding: 0;
+  color: silver;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* Universal CSS as needed */
+
+.misc-info {
+  color: white;
+  text-align: center;
+}
+
+.members {
+  color: white;
+  background-color: #597035;
+  display: flex;
+  justify-content: space-around;
+}
+
+.membership {
+  width: 100%;
+  display: flex;
+  flex-grow;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer {
+  width: 6rem;
+}
+
+footer {
+  margin: 2rem 0;
+}
