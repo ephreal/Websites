@@ -91,11 +91,11 @@ def product_html():
 			"""
 
 		# Create the product amounts and prices chart
-		for i in range(0, len(prod_qty)-1):
+		for i in range(0, len(prod_qty)):
 			qty = prod_qty[i]
 			price = prod_price[i]
 			html_block += f'\n\t\t\t\t<div class="prod-quantity-cell" align="center">{qty}</div>'
-			html_block += f'\n\t\t\t\t<div class="prod-price-cell" align="center">${price}</div>'
+			html_block += f'\n\t\t\t\t<div class="prod-price-cell" align="center">${price:.2f}</div>'
 
 		# Close out the section, put in any
 		# additional options, close out the
@@ -138,7 +138,3 @@ def product_menu():
 		product_list.append(f'\t\t\t<li class="prod-list-entry"><a href="#nav-{prod_id}">{product}</a></li>\n')
 
 	return product_list
-
-
-print("".join(product_html()))
-print("".join(product_menu()))

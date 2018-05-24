@@ -37,7 +37,7 @@ end = prod_html.index('</article>')
 
 # we want to replace everything from start of
 # article tag, to the end of the article tag.
-to_replace = prod_html[start:end+10]
+to_replace = prod_html[start-1:end+10]
 
 prod_html = prod_html.replace(to_replace, html)
 
