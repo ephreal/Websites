@@ -5,7 +5,7 @@
   display: flex;
   background-size: contain;
   flex-direction: column;
-  height: 12rem;
+  height: 20%;
 }
 /***********************\
 * Header at top of page *
@@ -18,8 +18,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  font-size: 4rem;
-  font-style: italic;
+  padding-bottom: 1rem;
 }
 
 /* Main logo */
@@ -34,10 +33,11 @@
 * nav menu in header *
 \********************/
 .navmenu {
-  border-top: 4px solid silver;
+  border-top: 2rem solid #8cc63e;
   border-bottom: 4px solid silver;
   width: 100%;
   height: 3rem;
+  box-sizing: content-box;
 }
 
 .menu {
@@ -50,11 +50,22 @@
 /*************************\
 * Set nav list properties *
 \*************************/
-.navmenu ul a>li {
+
+.menu a{
+  display: block;
+}
+
+.menu a>li {
+  display: flex;
+  justify-content: center;
   font-size: 1.25rem;
-  text-align: center;
-  vertical-align: middle;
   font-family: sans-serif;
   height: 100%;
   width: 10rem;
+}
+
+.members p {
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin: .5rem 0;
 }

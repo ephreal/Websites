@@ -1,5 +1,18 @@
 body {
-  background-color: #256335;
+  background-color: #6d6262;
+}
+
+/* header {
+  background-color: white;
+} */
+
+a {
+  /* text-decoration: none; */
+  color: #8cc63e;
+}
+
+.logo-container {
+  background: white;
 }
 
 /********************\
@@ -7,7 +20,8 @@ body {
 \********************/
 
 .navmenu {
-  background-color: #404020;
+  /* background-color: #09302b; */
+  background: linear-gradient(#206050,black);
 }
 
 /* List element coloration */
@@ -19,13 +33,13 @@ body {
   /* Original color:
    * background: linear-gradient(#164025,black);
    */
-   background: linear-gradient(#808060, black);
+   background: linear-gradient(#408070, black);
 }
 
 /* Color change when mousing over nav links */
 
 .navmenu ul a>li:hover {
-  background: linear-gradient(#808060, black);
+  background: linear-gradient(#408070, black);
 }
 
 /********************\
@@ -33,5 +47,56 @@ body {
 \********************/
 .members {
   color: white;
-  background-color: #404020;
+  background: linear-gradient(#206050,black);
+}
+
+
+/*************************\
+* Product list coloration *
+\*************************/
+
+.prod-button {
+  background-color: #09302b;
+}
+
+.prod-list-entry {
+  background-color: #09302b;
+}
+
+.prod-list-entry:hover {
+  background-color: #105040;
+}
+
+.product-navigation {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid silver;
+}
+
+/****************\
+* Product images *
+\****************/
+
+figure img {
+  border: 2px solid black;
+}
+
+.img_button {
+  color: #ffffff;
+  background: #09302b;
+  background-image: -webkit-linear-gradient(top, #206050, black);
+  background-image: -moz-linear-gradient(top, #206050, black);
+  background-image: -ms-linear-gradient(top, #206050, black);
+  background-image: -o-linear-gradient(top, #206050, black);
+  background-image: linear-gradient(to bottom, #206050, black);
+}
+
+.img_button:hover {
+  cursor: pointer;
+  background: #505030;
+  background-image: -webkit-linear-gradient(top, #408070, black);
+  background-image: -moz-linear-gradient(top, #408070, black);
+  background-image: -ms-linear-gradient(top, #408070, black);
+  background-image: -o-linear-gradient(top, #408070, black);
+  background-image: linear-gradient(to bottom, #408070, black);
+  text-decoration: none;
 }

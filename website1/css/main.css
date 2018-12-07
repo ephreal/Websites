@@ -7,13 +7,35 @@ html, body, header, figure, nav, ul, li, main, article, section {
   font-family: sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main, header {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+  margin: 1.5rem 0;
+}
+
 li {
   list-style: none;
 }
 
-a {
+.navmenu a {
   text-decoration: none;
-  color: blue;
+}
+
+.menu a>li {
+  display: flex;
+  align-items: center;
 }
 
 /* Universal CSS as needed */
@@ -24,8 +46,6 @@ a {
 }
 
 .members {
-  color: white;
-  background-color: #597035;
   display: flex;
   justify-content: space-around;
 }
@@ -40,8 +60,4 @@ a {
 
 .spacer {
   width: 6rem;
-}
-
-footer {
-  margin: 2rem 0;
 }

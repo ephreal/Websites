@@ -8,7 +8,8 @@ main {
 \**************/
 
 .prod-list {
-  display: flex;
+  /* Inline styling was used as well */
+  display: none;
   flex-flow: row wrap;
 }
 
@@ -16,7 +17,6 @@ main {
   width: 100%;
   box-sizing: border-box;
   margin: .2rem;
-  background-color: #404020;
   height: 2rem;
 }
 
@@ -27,36 +27,15 @@ main {
   padding: .5rem;
 }
 
-.prod-list-entry:hover {
-  background-color: #302010;
-}
-
 .img_button {
   margin-left: 2rem;
   margin-right: 2rem;
-  background: #404020;
-  background-image: -webkit-linear-gradient(top, #404020, #272707);
-  background-image: -moz-linear-gradient(top, #404020, #272707);
-  background-image: -ms-linear-gradient(top, #404020, #272707);
-  background-image: -o-linear-gradient(top, #404020, #272707);
-  background-image: linear-gradient(to bottom, #404020, #272707);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
   font-family: Arial;
-  color: #ffffff;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.img_button:hover {
-  background: #498040;
-  background-image: -webkit-linear-gradient(top, #498040, #366820);
-  background-image: -moz-linear-gradient(top, #498040, #366820);
-  background-image: -ms-linear-gradient(top, #498040, #366820);
-  background-image: -o-linear-gradient(top, #498040, #366820);
-  background-image: linear-gradient(to bottom, #498040, #366820);
   text-decoration: none;
 }
 

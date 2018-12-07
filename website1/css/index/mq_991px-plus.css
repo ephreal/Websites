@@ -6,9 +6,10 @@ main {
 }
 
 .promotional {
+  margin: auto;
   width: 50%;
   height: 460px;
-  background: url("../../img/jpg/Lamp.jpg") no-repeat;
+  background: url("../../img/jpg/SwingThing.jpg") no-repeat;
   background-size: contain;
   background-position: top;
   display: inline-block;
