@@ -4,6 +4,7 @@
     --main-background-accent-font: #8CC63E;
     --dark-accent: #0D3D33;
     --dark-accent-gradient: linear-gradient(#408070, black);
+    --light-accent: #8CC54F;
 }
 
 body {
@@ -110,6 +111,11 @@ figure img {
 
 .product-name {
     background-color: var(--dark-accent);
+}
+
+.product-name:hover {
+    background-color: var(--light-accent);
+    color: black;
 }
 
 .controller {
