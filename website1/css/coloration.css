@@ -1,18 +1,26 @@
-body {
-  background-color: #6d6262;
+:root {
+    --main-background-color: #6D6262;
+    --header-coloration: white;
+    --main-background-accent-font: #8CC63E;
+    --dark-accent: #0D3D33;
+    --dark-accent-gradient: linear-gradient(#408070, black);
 }
 
-/* header {
-  background-color: white;
-} */
+body {
+  background-color: var(--main-background-color);
+}
 
 a {
-  /* text-decoration: none; */
   color: #8cc63e;
 }
 
-.logo-container {
-  background: white;
+.main-header {
+  background: var(--header-coloration);
+}
+
+/* notice on products page */
+.notice {
+  color: var(--main-background-accent-font);
 }
 
 /********************\
@@ -20,26 +28,22 @@ a {
 \********************/
 
 .navmenu {
-  /* background-color: #09302b; */
-  background: linear-gradient(#206050,black);
+  background: var(--dark-accent);
 }
 
 /* List element coloration */
 .navmenu ul a>li {
-  background: linear-gradient(#206050,black);
+  background: var(--dark-accent);
 }
 /* Currently active menu coloration */
 .navmenu ul>a>li.active {
-  /* Original color:
-   * background: linear-gradient(#164025,black);
-   */
-   background: linear-gradient(#408070, black);
+   background: var(--dark-accent-gradient);
 }
 
 /* Color change when mousing over nav links */
 
 .navmenu ul a>li:hover {
-  background: linear-gradient(#408070, black);
+  background: var(--dark-accent-gradient);
 }
 
 /********************\
@@ -47,9 +51,12 @@ a {
 \********************/
 .members {
   color: white;
-  background: linear-gradient(#206050,black);
+  background: var(--dark-accent);
 }
 
+.testimonial-logo {
+  background-color: #888;
+}
 
 /*************************\
 * Product list coloration *
@@ -99,4 +106,17 @@ figure img {
   background-image: -o-linear-gradient(top, #408070, black);
   background-image: linear-gradient(to bottom, #408070, black);
   text-decoration: none;
+}
+
+.product-name {
+    background-color: var(--dark-accent);
+}
+
+.controller {
+    background-color: var(--dark-accent);
+    color: lightgray;
+}
+
+.faq-answer {
+    background-color: #404020;
 }

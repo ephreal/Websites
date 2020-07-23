@@ -1,0 +1,10 @@
+.promotional {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 2em auto;
+}
+
+.promotional_img {
+    width: 100%;
+}

@@ -1,8 +1,3 @@
-main {
-  width: 70%;
-  margin: 0 auto;
-}
-
 /*************************\
 * Formatting contact info *
 \*************************/
@@ -27,4 +22,14 @@ main {
 
 .contact a {
   font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact {
+        margin-top: 2em;
+    }
 }

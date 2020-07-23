@@ -1,5 +1,5 @@
 /* resets  as needed */
-html, body, header, figure, nav, ul, li, main, article, section {
+html, body, header, figure, nav, ul, li, main, article, section, img {
   margin: 0;
   padding: 0;
   color: silver;
@@ -14,10 +14,15 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  min-height: 1vh;
 }
 
-main, header {
-  flex: 1 0 auto;
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
 }
 
 footer {
@@ -60,4 +65,16 @@ li {
 
 .spacer {
   width: 6rem;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#company-logo {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
 }

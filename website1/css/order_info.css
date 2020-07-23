@@ -1,0 +1,77 @@
+main {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ol li {
+  list-style: decimal;
+}
+
+input[type=checkbox]:checked~.faq-answer {
+  max-height: 100rem;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.info-container {
+  width: 100%;
+  border: 1px solid silver;
+  margin: 0 auto;
+  display: flex;
+}
+
+input[type=checkbox]:checked~.controller::after {
+  transform: rotate(135deg);
+}
+
+.controller::after {
+  float: right;
+  content: "+";
+  transition: .35s;
+}
+
+.controller {
+  font-size: 1.25rem;
+  cursor: pointer;
+  width: 33%;
+  min-height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid silver;
+}
+
+.controller::after {
+    display: none;
+}
+
+.faq-answer {
+  text-align: left;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .controller {
+        display: block;
+        width: 100%;
+    }
+
+    .controller::after {
+        display: block;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .faq-answer {
+      overflow: hidden;
+      max-height: 0;
+      transition: all .35s;
+    }
+}
