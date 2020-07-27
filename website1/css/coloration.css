@@ -5,6 +5,7 @@
     --dark-accent: #0D3D33;
     --dark-accent-gradient: linear-gradient(#408070, black);
     --light-accent: #8CC54F;
+    --forest-green: #44c767;
 }
 
 body {
@@ -125,4 +126,10 @@ figure img {
 
 .faq-answer {
     background-color: #404020;
+}
+
+#mobile-toggle-label {
+    background-color:var(--forest-green);
+    border:4px solid var(--dark-accent);
+    border-radius: 5px;
 }

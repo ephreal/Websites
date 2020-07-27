@@ -43,6 +43,16 @@
     }
 }
 
+#mobile-navbar-toggle {
+    display: none;
+    position:absolute;
+    left: 2000em;
+}
+
+#mobile-toggle-label {
+    display: none;
+}
+
 @media only screen and (max-width: 767px) {
     /********************\
     * nav menu in header *
@@ -61,6 +71,42 @@
     /*************************\
     * Set nav list properties *
     \*************************/
+    #navmenu-and-mobile {
+        display: relative;
+    }
+
+    #mobile-toggle-label {
+        fill: black;
+        display: block;
+        float: right;
+        position: absolute;
+        right: 1em;
+        transition: .25s;
+        padding: 0 .25em;
+        box-sizing: border-box;
+	    cursor:pointer;
+    	font-size:17px;
+	    padding:5px 9px;
+    }
+
+    #mobile-toggle-label:hover {
+        fill: green;
+        cursor: pointer;
+    }
+
+    .mobile-label-rotated {
+        transform: rotate(-90deg);
+        transition: .25s;
+    }
+
+    #mobile-navbar-toggle:checked + .navmenu > .menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
     .menu a>li {
       font-size: 1.5rem;
       justify-content: flex-start;

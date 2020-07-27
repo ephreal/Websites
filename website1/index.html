@@ -11,32 +11,43 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/coloration.css">
   <title>Aspenline</title>
+  <script src="scripts/js/navbar.js"></script>
 </head>
 <body>
   <header class="main-header">
     <img id="company-logo" src="img/jpg/AspenlineLogoDesktop12.01.2017.jpg" class="header-logo"></img>
-    <nav class="navmenu">
-      <ul class="menu">
-        <a href="index.html">
-          <li class="active">Home</li>
-        </a>
-        <a href="products.html">
-          <li>Products</li>
-        </a>
-        <a href="order_info.html">
-          <li>Order Info</li>
-        </a>
-        <a href="about.html">
-          <li>About Us</li>
-        </a>
-        <a href="contact.html">
-          <li>Contact Us</li>
-        </a>
-        <a href="testimonials.html">
-          <li>Testimonials</li>
-        </a>
-      </ul>
+    <div id="navmenu-and-mobile">
+        <label for="mobile-navbar-toggle" id="mobile-toggle-label">
+            <svg viewBox="0 0 100 100" width="30" height="28">
+                <rect y="15" width="100" height="20"></rect>
+                <rect y="48" width="100" height="20"></rect>
+                <rect y="81" width="100" height="20"></rect>
+            </svg>
+        </label>
+        <input type="checkbox" id="mobile-navbar-toggle"></input>
+        <nav class="navmenu">
+          <ul class="menu">
+            <a href="index.html">
+              <li class="active">Home</li>
+            </a>
+            <a href="products.html">
+              <li>Products</li>
+            </a>
+            <a href="order_info.html">
+              <li>Order Info</li>
+            </a>
+            <a href="about.html">
+              <li>About Us</li>
+            </a>
+            <a href="contact.html">
+              <li>Contact Us</li>
+            </a>
+            <a href="testimonials.html">
+              <li>Testimonials</li>
+            </a>
+          </ul>
     </nav>
+  </div>
   </header>
   <main>
     <h1>Welcome to aspenline!</h1>
