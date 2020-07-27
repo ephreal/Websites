@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/products.css">
   <link rel="stylesheet" href="css/coloration.css">
-  <title>company_name</title>
+  <title>Aspenline</title>
 
   <script>
 
@@ -38,12 +38,26 @@
       }
       return current_index;
     }
+
+    function toggle_product_list()
+    {
+      var prod_list = document.getElementById("prod_list");
+      if (prod_list.style.display == "none")
+      {
+        prod_list.style.display = "flex";
+      }
+      else
+      {
+        prod_list.style.display = "none";
+      }
+    }
     </script>
 
 </head>
 <body>
   <header class="main-header">
-    <img id="company-logo" alt="Company Logo" src="" class="header-logo"></img>
+    <img id="company-logo" src="img/jpg/AspenlineLogoDesktop12.01.2017.jpg" class="header-logo"></img>
+    <div class="responsive_menu"></div>
     <nav class="navmenu">
       <ul class="menu">
         <a href="index.html">
@@ -67,30 +81,29 @@
       </ul>
     </nav>
   </header>
-
 <main>
+
   <h1>Products</h1>
-  <p>Select an image to view more details. Choose a menu entry to jump to that product.</p>
+  <h2 class="notice">Click or tap on an image to view more details.</h2>
+  <h2 class="notice">Open the menu and choose an entry to jump to that product.</h2>
   <p>
     To place an order, please <a href="contact.html">contact us!</a>
   </p>
 
+  <button class="img_button toggle_button" onclick="toggle_product_list()">Show/Hide product list</button>
+
   <nav class="product-navigation">
-    <ul class="prod-list">
-			<li class="prod-list-entry"><a href="#nav-LINE">Aluminum Pen</a></li>
-			<li class="prod-list-entry"><a href="#nav-BBPEN">Bamboo Pen</a></li>
+    <ul class="prod-list" id="prod_list" style="display: none;">
+      			<li class="prod-list-entry"><a href="#nav-BBPEN">Bamboo Pen</a></li>
+			<li class="prod-list-entry"><a href="#nav-BBAT">Baseball Bat</a></li>
 			<li class="prod-list-entry"><a href="#nav-BATM">Bat Pen</a></li>
 			<li class="prod-list-entry"><a href="#nav-BMT">Black Anodized Multi-purpose Tool</a></li>
-			<li class="prod-list-entry"><a href="#nav-BOX">Dream Box</a></li>
+			<li class="prod-list-entry"><a href="#nav-BKR">Black Key Ring Pocket Tool</a></li>
 			<li class="prod-list-entry"><a href="#nav-K-KR">Knife Key Ring</a></li>
 			<li class="prod-list-entry"><a href="#nav-LKR">Leather Key Ring</a></li>
-			<li class="prod-list-entry"><a href="#nav-PPSET">Maple Dual Pen Set</a></li>
-			<li class="prod-list-entry"><a href="#nav-W">Maple Jewelry Box</a></li>
-			<li class="prod-list-entry"><a href="#nav-LOM">Maple Letter Opener</a></li>
+			<li class="prod-list-entry"><a href="#nav-BPK">Lockback Knife</a></li>
 			<li class="prod-list-entry"><a href="#nav-LCM">Maple Lighter Cover</a></li>
 			<li class="prod-list-entry"><a href="#nav-MP">Maple Pen</a></li>
-			<li class="prod-list-entry"><a href="#nav-PLSET">Maple Pen & Letter Opener Set</a></li>
-			<li class="prod-list-entry"><a href="#nav-PSET">Maple Pen Set</a></li>
 			<li class="prod-list-entry"><a href="#nav-WSM">Maple Wine Stopper</a></li>
 			<li class="prod-list-entry"><a href="#nav-BTLOPENER-MI">Metal Bottle Opener</a></li>
 			<li class="prod-list-entry"><a href="#nav-MKR-MI">Metal Key Ring</a></li>
@@ -99,11 +112,11 @@
 			<li class="prod-list-entry"><a href="#nav-MRS">Mini Road Sign</a></li>
 			<li class="prod-list-entry"><a href="#nav-K-MP">Multi-Purpose Pocket Knife</a></li>
 			<li class="prod-list-entry"><a href="#nav-MP1">Multi-wood Pen</a></li>
-			<li class="prod-list-entry"><a href="#nav-PCLIP">Paperclip Holder</a></li>
+			<li class="prod-list-entry"><a href="#nav-PCLIP">Paperclip Holder (CLOSEOUT)</a></li>
 			<li class="prod-list-entry"><a href="#nav-RKR">Rosewood Key Ring</a></li>
-			<li class="prod-list-entry"><a href="#nav-ROSEWKNIFE-S">Rosewood Knife</a></li>
 			<li class="prod-list-entry"><a href="#nav-RP">Rosewood Pen</a></li>
 			<li class="prod-list-entry"><a href="#nav-WSR">Rosewood Wine Stopper</a></li>
+			<li class="prod-list-entry"><a href="#nav-SJP">Super Jumbo Pencil</a></li>
 			<li class="prod-list-entry"><a href="#nav-SWTH">Swing Thing</a></li>
 			<li class="prod-list-entry"><a href="#nav-TTT">Tic Tac Toe</a></li>
 			<li class="prod-list-entry"><a href="#nav-SP">Touch Stylus & Pen</a></li>
@@ -111,59 +124,22 @@
 			<li class="prod-list-entry"><a href="#nav-WT">Wine Tool</a></li>
 			<li class="prod-list-entry"><a href="#nav-WSLICE">Wood Slice Magnet</a></li>
 			<li class="prod-list-entry"><a href="#nav-WSO">Wood Slice Ornament</a></li>
+			<li class="prod-list-entry"><a href="#nav-HATPIN">Wood Souvenir Pin</a></li>
 			<li class="prod-list-entry"><a href="#nav-BTLOPENER-WI">Wooden Bottle Opener</a></li>
 			<li class="prod-list-entry"><a href="#nav-WHBO">Wooden Handle Bottle Opener</a></li>
 			<li class="prod-list-entry"><a href="#nav-MKR-WI">Wooden Key Ring</a></li>
-			<li class="prod-list-entry"><a href="#nav-WFM-M">Wooden Mini Frame</a></li>
 			<li class="prod-list-entry"><a href="#nav-YOYO">Yo-yo</a></li>
     </ul>
   </nav>
 
 <!-- article.products>(input[type=checkbox]#productNumberOrType+section.product>label[for=productNumberOrType].controller>div.product-image>figcaption.product-name+figure^^aside.product-info)*4 -->
-<article class="products">
-		<input type="checkbox" id="LINE">
-		<section class="product" id="nav-LINE">
-			<label for="LINE" class="controller">
-				<div class="product-image">
-					<figcaption class="product-name">
-						Aluminum Pen
-					</figcaption>
-					<figure>
-						<img id="img_LINE" src="img/products/LINE/AluminumPen.jpg" alt="Aluminum Pen">
-					</figure>
-				</div>
-			</label>
-			<aside class="product-info">
-				<p>
-					Laser Engraved Pen. Anodized aluminum ballpoint pen with black ink. Pen is refillable with a standard Parker type ink cartridge. Comes in 7 stylish and bright colors with a high gloss finish. Quality giveaway to promote your business.
-				</p>
-				<p>
-					<strong>Packaging: </strong>Optional black velour pouch</br>
-					<strong>Weight: </strong>0.05</br>
-					<strong>Imprint Area: </strong>1.5 in x .25 in</br>
-					<strong>Product Code: </strong>LINE
-				</p>
-				<section class=prod-pricing>
-					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
 
-				<div class="prod-quantity-cell" align="center">45</div>
-				<div class="prod-price-cell" align="center">$4.36</div>
-				<div class="prod-quantity-cell" align="center">200</div>
-				<div class="prod-price-cell" align="center">$4.28</div>
-				<div class="prod-quantity-cell" align="center">500</div>
-				<div class="prod-price-cell" align="center">$4.19</div>
-				<div class="prod-quantity-cell" align="center">1000</div>
-				<div class="prod-price-cell" align="center">$4.11</div>
-				</section>
-				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each.
-				</p>
-				<p>
-					Setup Fee $50.00 (V)
-				</p>
-			</aside>
-		</section>
+
+
+
+
+
+<article class="products">
 		<input type="checkbox" id="BBPEN">
 		<section class="product" id="nav-BBPEN">
 			<label for="BBPEN" class="controller">
@@ -171,7 +147,7 @@
 					<figcaption class="product-name">
 						Bamboo Pen
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_BBPEN" src="img/products/BBPEN/BambooPen.jpg" alt="Bamboo Pen">
 					</figure>
 				</div>
@@ -181,15 +157,16 @@
 					Eco-friendly bamboo ball point pen with black ink. Chrome finished accents. Re-fillable with standard Parker type cartridge. Includes clear PVC box packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong></br>
+					<strong>Optional Packaging: </strong>Black Velour Pouch</br>
+					<strong>Weight: </strong>0.6oz</br>
+					<strong>Dimensions: </strong>0.5in x 0.5in x 5.5in</br>
+					<strong>Imprint Area: </strong>1.625in x 0.25in</br>
 					<strong>Product Code: </strong>BBPEN
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">60</div>
 				<div class="prod-price-cell" align="center">$3.21</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -200,7 +177,51 @@
 				<div class="prod-price-cell" align="center">$3.02</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
+				</p>
+				<p>
+					Setup Fee $50.00 (V)
+				</p>
+			</aside>
+		</section>
+		<input type="checkbox" id="BBAT">
+		<section class="product" id="nav-BBAT">
+			<label for="BBAT" class="controller">
+				<div class="product-image">
+					<figcaption class="product-name">
+						Baseball Bat
+					</figcaption>
+					<figure class="prod_figure">
+						<img id="img_BBAT" src="img/products/BBAT/BBBAT.jpg" alt="Baseball Bat">
+					</figure>
+				</div>
+			</label>
+			<aside class="product-info">
+				<p>
+					This 7.5 inch real wood baseball bat is a perfect memento for the sports enthusiast! This item features a high gloss, lacquer finish and is ideal for little league teams and sports themed events. Engrave your logo and hit the promotional gift out of the park! Bulk Packaging.
+				</p>
+				<p>
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>1.2oz</br>
+					<strong>Dimensions: </strong>7.5in</br>
+					<strong>Imprint Area: </strong>1.5in x 0.5in</br>
+					<strong>Product Code: </strong>BBAT
+				</p>
+				<section class=prod-pricing>
+					<div class="prod-quantity-cell" align="center">QTY</div>
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
+				<div class="prod-quantity-cell" align="center">40</div>
+				<div class="prod-price-cell" align="center">$5.52</div>
+				<div class="prod-quantity-cell" align="center">200</div>
+				<div class="prod-price-cell" align="center">$5.41</div>
+				<div class="prod-quantity-cell" align="center">500</div>
+				<div class="prod-price-cell" align="center">$5.30</div>
+				<div class="prod-quantity-cell" align="center">1000</div>
+				<div class="prod-price-cell" align="center">$5.19</div>
+				</section>
+				<p class="prod_options">
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -214,25 +235,26 @@
 					<figcaption class="product-name">
 						Bat Pen
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_BATM" src="img/products/BATM/BatPen.jpg" alt="Bat Pen">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Laser engraved pen - Batter up! You will never strike out with this maple baseball bat pen. This is a one of a kind pen that will keep the season alive all year through. Great for little league teams and sports themed parties.
+					Laser engraved pen - Batter up! You will never strike out with this maple baseball bat pen. This is a one of a kind pen that will keep the season alive all year through. Great for little league teams and sports themed parties. Includes clear PVC box packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong>Optional black velour pouch</br>
-					<strong>Weight: </strong>0.05</br>
-					<strong>Imprint Area: </strong>1.625 in x 0.25 in</br>
+					<strong>Optional Packaging: </strong>Black Velour Pen Pouch</br>
+					<strong>Weight: </strong>0.6oz</br>
+					<strong>Dimensions: </strong>0.4in x 0.4in x 5.25in</br>
+					<strong>Imprint Area: </strong>1.625in x 0.25in</br>
 					<strong>Product Code: </strong>BATM
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">35</div>
 				<div class="prod-price-cell" align="center">$6.07</div>
 				<div class="prod-quantity-cell" align="center">100</div>
@@ -243,7 +265,7 @@
 				<div class="prod-price-cell" align="center">$5.72</div>
 				</section>
 				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -257,25 +279,26 @@
 					<figcaption class="product-name">
 						Black Anodized Multi-purpose Tool
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_BMT" src="img/products/BMT/BlackAnodizedMPT.jpg" alt="Black Anodized Multi-purpose Tool">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Laser engraved multi-purpose pocket tool - This multi-purpose pocket tool has 5 functions including a cork screw, screw driver, bottle opener, knife blade and a can opener. Features a durable matte black anodized finish and the tools are stainless steel. Great employee or corporate gift or incentive item. Good item for Boy Scouts and Army, Navy, Airforce, Marines, Coast Guard and National Guard. 3.25 in. x .375 in. x 7 in. long.
+					Laser engraved multi-purpose pocket tool - This multi-purpose pocket tool has 5 functions including a cork screw, screw driver, bottle opener, knife blade and a can opener. Features a durable matte black anodized finish and the tools are stainless steel. Great employee or corporate gift or incentive item. When opened, knife is 6in long. Bulk packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong>Optional black velour pouch</br>
-					<strong>Weight: </strong>0.2</br>
+					<strong>Optional Packaging: </strong>Black Velour Drawstring Pouch</br>
+					<strong>Weight: </strong>1.9oz</br>
+					<strong>Dimensions: </strong>3.5in x 1in x 0.3in</br>
 					<strong>Imprint Area: </strong>1.75 in x 0.5 in</br>
 					<strong>Product Code: </strong>BMT
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">50</div>
 				<div class="prod-price-cell" align="center">$3.82</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -286,50 +309,51 @@
 				<div class="prod-price-cell" align="center">$3.60</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
 				</p>
 			</aside>
 		</section>
-		<input type="checkbox" id="BOX">
-		<section class="product" id="nav-BOX">
-			<label for="BOX" class="controller">
+		<input type="checkbox" id="BKR">
+		<section class="product" id="nav-BKR">
+			<label for="BKR" class="controller">
 				<div class="product-image">
 					<figcaption class="product-name">
-						Dream Box
+						Black Key Ring Pocket Tool
 					</figcaption>
-					<figure>
-						<img id="img_BOX" src="img/products/BOX/Box.jpg" alt="Dream Box">
+					<figure class="prod_figure">
+						<img id="img_BKR" src="img/products/BKR/BKR1.jpg" alt="Black Key Ring Pocket Tool">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Laser engraved box - Solid maple wood round box with slip fit lid. Great to hold small keepsake items. Black cardboard gift box included.
+					This tool is equipped with 3 stainless steel tools: Nail File, Scissors, and Phillips Head Screwdriver. Durable Hi Tec Black Anodized Finish allows for clean crisp laser engraving.
 				</p>
 				<p>
-					<strong>Packaging: </strong>Optional black velour pouch</br>
-					<strong>Weight: </strong>0.07</br>
-					<strong>Imprint Area: </strong>1.195 in x 1.195 in</br>
-					<strong>Product Code: </strong>BOX
+					<strong>Optional Packaging: </strong>Black Velour Drawstring Pouch</br>
+					<strong>Weight: </strong>1.1oz</br>
+					<strong>Dimensions: </strong>3.75in x 0.25in</br>
+					<strong>Imprint Area: </strong>2 in x 0.5 in</br>
+					<strong>Product Code: </strong>BKR
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
-				<div class="prod-quantity-cell" align="center">55</div>
-				<div class="prod-price-cell" align="center">$3.47</div>
-				<div class="prod-quantity-cell" align="center">200</div>
-				<div class="prod-price-cell" align="center">$3.40</div>
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
+				<div class="prod-quantity-cell" align="center">70</div>
+				<div class="prod-price-cell" align="center">$2.72</div>
+				<div class="prod-quantity-cell" align="center">250</div>
+				<div class="prod-price-cell" align="center">$2.66</div>
 				<div class="prod-quantity-cell" align="center">500</div>
-				<div class="prod-price-cell" align="center">$3.33</div>
+				<div class="prod-price-cell" align="center">$2.61</div>
 				<div class="prod-quantity-cell" align="center">1000</div>
-				<div class="prod-price-cell" align="center">$3.27</div>
+				<div class="prod-price-cell" align="center">$2.56</div>
 				</section>
 				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -343,25 +367,26 @@
 					<figcaption class="product-name">
 						Knife Key Ring
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_K_KR" src="img/products/K-KR/K-KR.jpg" alt="Knife Key Ring">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Laser engraved key ring - This handy pocket tool has 3 chrome plated tools including a knife blade, scissors, a file, and a key ring too. The rosewood handles are gloss coated to protect the wood finish. Great employee gift or corporote giveaway. Good item for Boy Scouts and Army, Navy, Airforce, Marines, Coast Guard,and National Guard. 3.75 in. long when opened.
+					Laser engraved key ring - This handy pocket tool has 3 chrome plated tools including a knife blade, scissors, a file, and a key ring too. The rosewood handles are gloss coated to protect the wood finish. Great employee gift or corporote giveaway. When opened, knife is 3.75in long. Matte black gift box included.
 				</p>
 				<p>
-					<strong>Packaging: </strong>Optional deluxe black cardboard gift box</br>
-					<strong>Weight: </strong>0.05</br>
-					<strong>Imprint Area: </strong>2 in x 0.4 in</br>
+					<strong>Optional Packaging: </strong>Black Velour Drawstring Pouch.</br>
+					<strong>Weight: </strong>1.1oz</br>
+					<strong>Dimensions: </strong>2.2in x 0.8in x 0.3in</br>
+					<strong>Imprint Area: </strong>2in x 0.4in</br>
 					<strong>Product Code: </strong>K-KR
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">70</div>
 				<div class="prod-price-cell" align="center">$2.72</div>
 				<div class="prod-quantity-cell" align="center">250</div>
@@ -372,7 +397,7 @@
 				<div class="prod-price-cell" align="center">$2.56</div>
 				</section>
 				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -386,8 +411,8 @@
 					<figcaption class="product-name">
 						Leather Key Ring
 					</figcaption>
-					<figure>
-						<img id="img_LKR" src="img/products/LKR/LKR2.jpg" alt="Leather Key Ring">
+					<figure class="prod_figure">
+						<img id="img_LKR" src="img/products/LKR/LKR5.jpg" alt="Leather Key Ring">
 					</figure>
 				</div>
 			</label>
@@ -399,22 +424,23 @@
 	        	</div>
 				<script>
 					var img_LKR_index = 0;
-					var img_LKR_array = ['img/products/LKR/LKR2.jpg', 'img/products/LKR/LKR1.jpg', 'img/products/LKR/LKR3.jpg', 'img/products/LKR/LKR4.jpg'];
+					var img_LKR_array = ['img/products/LKR/LKR5.jpg', 'img/products/LKR/LKR2.jpg', 'img/products/LKR/LKR3.jpg', 'img/products/LKR/LKR4.jpg', 'img/products/LKR/LKR1.jpg'];
 				</script>
-
+				
 				<p>
-					Available in four trendy colors, your logo or sentiment will engrave beautifully and be a lasting, elegant gift. This key ring is made of pliable leatherette which means no scratching or tearing. This 4.25 x 1.625 classic item makes a great incentive or corporate gift.
+					Available in four trendy colors, and with your logo/sentiment beautifully engraved creates a lasting, elegant gift. This key ring is made of pliable leatherette—which means no scratching or tearing. This classic item makes a great incentive or corporate gift. Bulk packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong>4.25 in x 1.625 in</br>
+					<strong>Optional Packaging: </strong>Black Velour Drawstring Pouch</br>
+					<strong>Weight: </strong>0.3oz</br>
+					<strong>Dimensions: </strong>3.6in x 0.1in x 1.3in</br>
+					<strong>Imprint Area: </strong>1.75in x 1in</br>
 					<strong>Product Code: </strong>LKR
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">50</div>
 				<div class="prod-price-cell" align="center">$4.51</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -425,136 +451,51 @@
 				<div class="prod-price-cell" align="center">$4.25</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
 				</p>
 			</aside>
 		</section>
-		<input type="checkbox" id="PPSET">
-		<section class="product" id="nav-PPSET">
-			<label for="PPSET" class="controller">
+		<input type="checkbox" id="BPK">
+		<section class="product" id="nav-BPK">
+			<label for="BPK" class="controller">
 				<div class="product-image">
 					<figcaption class="product-name">
-						Maple Dual Pen Set
+						Lockback Knife
 					</figcaption>
-					<figure>
-						<img id="img_PPSET" src="img/products/PPSET/MapleDualPenSet.jpg" alt="Maple Dual Pen Set">
+					<figure class="prod_figure">
+						<img id="img_BPK" src="img/products/BPK/BPK.jpg" alt="Lockback Knife">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Engraved pen set - Solid maple wood box with a lacquered satin finish. Velour insert to hold solid genuine maple wood ballpoint pens that are stylishly handcrafted with brilliant 22-carat gold plated trim. Pens are refillable with a standard Cross type refill. Great desk accessory for your employees or corporate gift. Black cardboard gift box is included.
+					Stainless steel partial serrated blade with a blade lock and sturdy pocket clip.  Overall length when opened is 7.5 inches.
 				</p>
 				<p>
-					<strong>Packaging: </strong>Black cardboard gift box</br>
-					<strong>Weight: </strong>0.53</br>
-					<strong>Imprint Area: </strong>Box: 6 in x 2.5 in. Pen/Pencil: 1.625 in x 0.25 in</br>
-					<strong>Product Code: </strong>PPSET
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>1.9oz</br>
+					<strong>Dimensions: </strong>4.5in  x 0.5in</br>
+					<strong>Imprint Area: </strong>2.5in x 0.25in</br>
+					<strong>Product Code: </strong>BPK
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
-				<div class="prod-quantity-cell" align="center">10</div>
-				<div class="prod-price-cell" align="center">$22.42</div>
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">25</div>
-				<div class="prod-price-cell" align="center">$21.98</div>
+				<div class="prod-price-cell" align="center">$7.25</div>
 				<div class="prod-quantity-cell" align="center">100</div>
-				<div class="prod-price-cell" align="center">$21.55</div>
+				<div class="prod-price-cell" align="center">$7.08</div>
 				<div class="prod-quantity-cell" align="center">250</div>
-				<div class="prod-price-cell" align="center">$21.12</div>
-				</section>
-				<p class="prod_options">
-					4R
-				</p>
-				<p>
-					Setup Fee $50.00 (V)
-				</p>
-			</aside>
-		</section>
-		<input type="checkbox" id="W">
-		<section class="product" id="nav-W">
-			<label for="W" class="controller">
-				<div class="product-image">
-					<figcaption class="product-name">
-						Maple Jewelry Box
-					</figcaption>
-					<figure>
-						<img id="img_W" src="img/products/W/MapleJewelryBox.jpg" alt="Maple Jewelry Box">
-					</figure>
-				</div>
-			</label>
-			<aside class="product-info">
-				<p>
-					Laser engraved box - This unique maple wood box is lacquered to a satin finish and includes a rich velour lining. Perfect for a keepsake or jewelry box. Great employee gift to keep desk accessories handy or fill it with candy and send it as a corporate holiday gift. Black cardboard gift box included.
-				</p>
-				<p>
-					<strong>Packaging: </strong>Black cardboard gift box</br>
-					<strong>Weight: </strong>0.3</br>
-					<strong>Imprint Area: </strong>6 in x 2.5 in</br>
-					<strong>Product Code: </strong>W
-				</p>
-				<section class=prod-pricing>
-					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
-				<div class="prod-quantity-cell" align="center">15</div>
-				<div class="prod-price-cell" align="center">$13.18</div>
-				<div class="prod-quantity-cell" align="center">50</div>
-				<div class="prod-price-cell" align="center">$12.92</div>
-				<div class="prod-quantity-cell" align="center">100</div>
-				<div class="prod-price-cell" align="center">$12.67</div>
-				<div class="prod-quantity-cell" align="center">250</div>
-				<div class="prod-price-cell" align="center">$12.41</div>
-				</section>
-				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
-				</p>
-				<p>
-					Setup Fee $50.00 (V)
-				</p>
-			</aside>
-		</section>
-		<input type="checkbox" id="LOM">
-		<section class="product" id="nav-LOM">
-			<label for="LOM" class="controller">
-				<div class="product-image">
-					<figcaption class="product-name">
-						Maple Letter Opener
-					</figcaption>
-					<figure>
-						<img id="img_LOM" src="img/products/LOM/MapleLetterOpener.jpg" alt="Maple Letter Opener">
-					</figure>
-				</div>
-			</label>
-			<aside class="product-info">
-				<p>
-					Laser engraved letter opener - Made from solid genuine maple wood and features a handcrafted 22-carat gold plated trim for a fashionable look. Great for employee appreciation/recognition or business appreciation gift.
-				</p>
-				<p>
-					<strong>Packaging: </strong>Optional black velour pouch</br>
-					<strong>Weight: </strong>0.05</br>
-					<strong>Imprint Area: </strong>1.625 in x 0.25 in</br>
-					<strong>Product Code: </strong>LOM
-				</p>
-				<section class=prod-pricing>
-					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
-				<div class="prod-quantity-cell" align="center">30</div>
 				<div class="prod-price-cell" align="center">$6.92</div>
-				<div class="prod-quantity-cell" align="center">100</div>
-				<div class="prod-price-cell" align="center">$6.78</div>
-				<div class="prod-quantity-cell" align="center">250</div>
-				<div class="prod-price-cell" align="center">$6.65</div>
 				<div class="prod-quantity-cell" align="center">500</div>
-				<div class="prod-price-cell" align="center">$6.52</div>
+				<div class="prod-price-cell" align="center">$6.75</div>
 				</section>
 				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -568,25 +509,26 @@
 					<figcaption class="product-name">
 						Maple Lighter Cover
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_LCM" src="img/products/LCM/LCM.jpg" alt="Maple Lighter Cover">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Our maple lighter cover is fashioned from real wood and allows for a large space to engrave your logo or sentiment. Lighters are not included with this vintage-inspired executive gift.
+					Our maple lighter cover is fashioned from real wood and allows for a large space to engrave your logo or sentiment. Lighters are not included with this vintage-inspired executive gift. Includes clear PVC box packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong></br>
+					<strong>Optional Packaging: </strong>Black Velour Drawstring Pouch</br>
+					<strong>Weight: </strong>0.6oz</br>
+					<strong>Dimensions: </strong>3.25in x 1in x 0.5in</br>
+					<strong>Imprint Area: </strong>2.25in x 0.85in</br>
 					<strong>Product Code: </strong>LCM
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">40</div>
 				<div class="prod-price-cell" align="center">$4.77</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -597,7 +539,7 @@
 				<div class="prod-price-cell" align="center">$4.49</div>
 				</section>
 				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -611,25 +553,26 @@
 					<figcaption class="product-name">
 						Maple Pen
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_MP" src="img/products/MP/MaplePen.jpg" alt="Maple Pen">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Laser engraved pen - This maple-wood ballpoint pen is stylishly handcrafted with brilliant 22-carat gold plated trim. Pen comes complete with a refillable Cross (R) type black ballpoint cartridge.
+					Laser engraved pen - This maple-wood ballpoint pen is stylishly handcrafted with brilliant 22-carat gold plated trim. Pen comes complete with a refillable Cross (R) type black ballpoint cartridge. Includes clear PVC box packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong>Optional black velour pouch</br>
-					<strong>Weight: </strong>0.05</br>
-					<strong>Imprint Area: </strong>1.625 in x 0.25 in</br>
+					<strong>Optional Packaging: </strong>Black Velour Drawstring Pouch</br>
+					<strong>Weight: </strong>0.6oz</br>
+					<strong>Dimensions: </strong>5.5in x 0.5in</br>
+					<strong>Imprint Area: </strong>1.625in x 0.25in</br>
 					<strong>Product Code: </strong>MP
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">40</div>
 				<div class="prod-price-cell" align="center">$4.99</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -640,93 +583,7 @@
 				<div class="prod-price-cell" align="center">$4.70</div>
 				</section>
 				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
-				</p>
-				<p>
-					Setup Fee $50.00 (V)
-				</p>
-			</aside>
-		</section>
-		<input type="checkbox" id="PLSET">
-		<section class="product" id="nav-PLSET">
-			<label for="PLSET" class="controller">
-				<div class="product-image">
-					<figcaption class="product-name">
-						Maple Pen & Letter Opener Set
-					</figcaption>
-					<figure>
-						<img id="img_PLSET" src="img/products/PLSET/MaplePenOpenerSet.jpg" alt="Maple Pen & Letter Opener Set">
-					</figure>
-				</div>
-			</label>
-			<aside class="product-info">
-				<p>
-					Engraved pen set - Solid maple wood box with a lacquered satin finish. Velour insert to hold a solid genuine maple wood ballpoint pen and letter opener that are stylishly handcrafted with brilliant 22-carat gold plated trim. Pen is refillable with a standard Cross type refill. Great desk accessory for your employees or corporate gift. Black cardboard gift box is included.
-				</p>
-				<p>
-					<strong>Packaging: </strong>Black cardboard gift box</br>
-					<strong>Weight: </strong>0.53</br>
-					<strong>Imprint Area: </strong>Box: 6 in x 2.5 in. Pen/LetterOpener: 1.625 in x 0.25 in</br>
-					<strong>Product Code: </strong>PLSET
-				</p>
-				<section class=prod-pricing>
-					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
-				<div class="prod-quantity-cell" align="center">10</div>
-				<div class="prod-price-cell" align="center">$21.39</div>
-				<div class="prod-quantity-cell" align="center">25</div>
-				<div class="prod-price-cell" align="center">$20.97</div>
-				<div class="prod-quantity-cell" align="center">100</div>
-				<div class="prod-price-cell" align="center">$20.56</div>
-				<div class="prod-quantity-cell" align="center">250</div>
-				<div class="prod-price-cell" align="center">$20.15</div>
-				</section>
-				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
-				</p>
-				<p>
-					Setup Fee $50.00 (V)
-				</p>
-			</aside>
-		</section>
-		<input type="checkbox" id="PSET">
-		<section class="product" id="nav-PSET">
-			<label for="PSET" class="controller">
-				<div class="product-image">
-					<figcaption class="product-name">
-						Maple Pen Set
-					</figcaption>
-					<figure>
-						<img id="img_PSET" src="img/products/PSET/MaplePenSet.jpg" alt="Maple Pen Set">
-					</figure>
-				</div>
-			</label>
-			<aside class="product-info">
-				<p>
-					Laser engraved pen set - Solid maple wood box with a lacquered satin finish. Velour insert for pen. Solid maple wood ballpoint pen is stylishly handcrafted with a brilliant 22-carat gold plated trim. Pen is refillable with a standard Cross type refill. Great desk accessory for your employees or corporate gift. Black cardboard gift box is included
-				</p>
-				<p>
-					<strong>Packaging: </strong>Black cardboard gift box</br>
-					<strong>Weight: </strong>0.53</br>
-					<strong>Imprint Area: </strong>Box: 6 in x 2.5 in. Pen: 1.625 in x 0.25 in</br>
-					<strong>Product Code: </strong>PSET
-				</p>
-				<section class=prod-pricing>
-					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
-				<div class="prod-quantity-cell" align="center">15</div>
-				<div class="prod-price-cell" align="center">$16.20</div>
-				<div class="prod-quantity-cell" align="center">50</div>
-				<div class="prod-price-cell" align="center">$15.88</div>
-				<div class="prod-quantity-cell" align="center">100</div>
-				<div class="prod-price-cell" align="center">$15.57</div>
-				<div class="prod-quantity-cell" align="center">250</div>
-				<div class="prod-price-cell" align="center">$15.26</div>
-				</section>
-				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -740,25 +597,26 @@
 					<figcaption class="product-name">
 						Maple Wine Stopper
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_WSM" src="img/products/WSM/MapleWineStopper.jpg" alt="Maple Wine Stopper">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Laser engraved bottle stopper - Solid genuine rosewood top and natural cork imported from Portugal. The tapered corks fit most standard wine bottles. Great employee or corporate gift. 1.5 in diameter.
+					Laser engraved bottle stopper - Solid maple top and natural cork imported from Portugal. The tapered corks fit most standard wine bottles. Great employee or corporate gift. 1.5 in diameter. Bulk Packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong>Optional black velour pouch</br>
-					<strong>Weight: </strong>0.04</br>
-					<strong>Imprint Area: </strong>1.25 in x 1.25 in</br>
+					<strong>Optional Packaging: </strong>Black Velour Drawstring Pouch</br>
+					<strong>Weight: </strong>0.5oz</br>
+					<strong>Dimensions: </strong>2in x 1.5in</br>
+					<strong>Imprint Area: </strong>1.25in x 1.25in</br>
 					<strong>Product Code: </strong>WSM
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">40</div>
 				<div class="prod-price-cell" align="center">$5.05</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -769,7 +627,7 @@
 				<div class="prod-price-cell" align="center">$4.76</div>
 				</section>
 				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -783,8 +641,8 @@
 					<figcaption class="product-name">
 						Metal Bottle Opener
 					</figcaption>
-					<figure>
-						<img id="img_BTLOPENER_MI" src="img/products/BTLOPENER-MI/BTLOPENER-MI3.jpg" alt="Metal Bottle Opener">
+					<figure class="prod_figure">
+						<img id="img_BTLOPENER_MI" src="img/products/BTLOPENER-MI/BTLOPENER-MI4.jpg" alt="Metal Bottle Opener">
 					</figure>
 				</div>
 			</label>
@@ -796,22 +654,23 @@
 	        	</div>
 				<script>
 					var img_BTLOPENER_MI_index = 0;
-					var img_BTLOPENER_MI_array = ['img/products/BTLOPENER-MI/BTLOPENER-MI3.jpg', 'img/products/BTLOPENER-MI/BTLOPENER-MI2.jpg', 'img/products/BTLOPENER-MI/BTLOPENER-MI.jpg', 'img/products/BTLOPENER-MI/BTLOPENER-MI1.jpg'];
+					var img_BTLOPENER_MI_array = ['img/products/BTLOPENER-MI/BTLOPENER-MI4.jpg', 'img/products/BTLOPENER-MI/BTLOPENER-MI.jpg', 'img/products/BTLOPENER-MI/BTLOPENER-MI1.jpg', 'img/products/BTLOPENER-MI/BTLOPENER-MI3.jpg', 'img/products/BTLOPENER-MI/BTLOPENER-MI2.jpg'];
 				</script>
-
+				
 				<p>
-					This bottle opener features a colorful metal insert on each side, where your logo will stand out. Designed to open both bottles and cans with ease, this is a promotional item that will be used for years! This slim tool is 4.25 x 1.625 and made from a sturdy metal alloy. A great item for men and women, this makes a great corporate gift.
+					This bottle opener features a colorful metal insert on each side (or a magnet insert on second side for $0.20 each). This slim tool is made from a sturdy metal alloy. A great item for men, women or a corporate gift. Bulk packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong>4.25 in x 1.625 in</br>
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>1.9oz</br>
+					<strong>Dimensions: </strong>4.25in x 1.5in</br>
+					<strong>Imprint Area: </strong>2.25in x 0.75in</br>
 					<strong>Product Code: </strong>BTLOPENER-MI
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">40</div>
 				<div class="prod-price-cell" align="center">$6.16</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -822,7 +681,7 @@
 				<div class="prod-price-cell" align="center">$5.80</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -836,8 +695,8 @@
 					<figcaption class="product-name">
 						Metal Key Ring
 					</figcaption>
-					<figure>
-						<img id="img_MKR_MI" src="img/products/MKR-MI/MKR-MI4.jpg" alt="Metal Key Ring">
+					<figure class="prod_figure">
+						<img id="img_MKR_MI" src="img/products/MKR-MI/MKR-MI3.jpg" alt="Metal Key Ring">
 					</figure>
 				</div>
 			</label>
@@ -849,22 +708,23 @@
 	        	</div>
 				<script>
 					var img_MKR_MI_index = 0;
-					var img_MKR_MI_array = ['img/products/MKR-MI/MKR-MI4.jpg', 'img/products/MKR-MI/MKR-MI3.jpg', 'img/products/MKR-MI/MKR-MI2.jpg', 'img/products/MKR-MI/MKR-MI1.jpg'];
+					var img_MKR_MI_array = ['img/products/MKR-MI/MKR-MI3.jpg', 'img/products/MKR-MI/MKR-MI2.jpg', 'img/products/MKR-MI/MKR-MI4.jpg', 'img/products/MKR-MI/MKR-MI5.jpg', 'img/products/MKR-MI/MKR-MI1.jpg'];
 				</script>
-
+				
 				<p>
-					This metal key ring features a colorful metal insert on each side, where your logo will stand out. A beautiful, time-honored gift, this is a promotional item that will be used for years! This key ring is 4.25 x 1.625 is available in four colors and made from a sturdy metal alloy. A great item for men and women, this makes a great corporate gift.
+					This metal key ring features a colorful metal insert on each side, where your logo will stand out. A beautiful, time-honored gift, this is a promotional item that will be used for years! This key ring is available in four colors and made from a sturdy metal alloy. A great item for men and women, this makes a great corporate gift. Bulk packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong>4.25 in x 1.625 in</br>
+					<strong>Optional Packaging: </strong>Velour Pouch</br>
+					<strong>Weight: </strong>1.0oz</br>
+					<strong>Dimensions: </strong>4in x 1.25in</br>
+					<strong>Imprint Area: </strong>2.25in x 0.75in</br>
 					<strong>Product Code: </strong>MKR-MI
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">45</div>
 				<div class="prod-price-cell" align="center">$4.84</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -875,7 +735,7 @@
 				<div class="prod-price-cell" align="center">$4.56</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -889,25 +749,26 @@
 					<figcaption class="product-name">
 						Metal Pocket Tool
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_MPT" src="img/products/MPT/MetalPocketTool.jpg" alt="Metal Pocket Tool">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Laser engraved key ring - This handy metal pocket tool has a high quality anodized aluminum case and stainless steel tools including scissors, can opener, file, knife blade, flat head screw driver and ruler. Keep your company name in their pocket. Comes in 4 stylish colors and can be engraved on both sides.
+					Laser engraved key ring - This handy metal pocket tool has a high quality anodized aluminum case and stainless steel tools including scissors, can opener, file, knife blade, flat head screw driver and ruler. Keep your company name in their pocket. Comes in 4 stylish colors and can be engraved on both sides. Bulk Packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong>Optional deluxe black cardboard gift box with velour insert of velour pouch.</br>
-					<strong>Weight: </strong>0.13</br>
-					<strong>Imprint Area: </strong>1.87 in x 0.8 in</br>
+					<strong>Optional Packaging: </strong>Black Velour Drawstring Pouch</br>
+					<strong>Weight: </strong>1.8oz</br>
+					<strong>Dimensions: </strong>4in x 1.25in</br>
+					<strong>Imprint Area: </strong>1.875 in x 0.8 in</br>
 					<strong>Product Code: </strong>MPT
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">50</div>
 				<div class="prod-price-cell" align="center">$3.68</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -918,7 +779,7 @@
 				<div class="prod-price-cell" align="center">$3.46</div>
 				</section>
 				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -932,8 +793,8 @@
 					<figcaption class="product-name">
 						Metal Whistle
 					</figcaption>
-					<figure>
-						<img id="img_MW" src="img/products/MW/MW2.jpg" alt="Metal Whistle">
+					<figure class="prod_figure">
+						<img id="img_MW" src="img/products/MW/MW4.jpg" alt="Metal Whistle">
 					</figure>
 				</div>
 			</label>
@@ -945,22 +806,23 @@
 	        	</div>
 				<script>
 					var img_MW_index = 0;
-					var img_MW_array = ['img/products/MW/MW2.jpg', 'img/products/MW/MW4.jpg', 'img/products/MW/MW3.jpg', 'img/products/MW/MW1.jpg'];
+					var img_MW_array = ['img/products/MW/MW4.jpg', 'img/products/MW/MW2.jpg', 'img/products/MW/MW1.jpg', 'img/products/MW/MW3.jpg'];
 				</script>
-
+				
 				<p>
-					Fun for kids, smart for adults! This anodized metal whistle is a perfect promotional item for hikers and campers! Your logo or sentiment will stand out in white ink against any of the four bright colors available. Great item for scouting!
+					Fun for kids, smart for adults! This anodized metal whistle is a perfect promotional item for hikers and campers! Your logo or sentiment will stand out in white ink against any of the four bright colors available. Great item for scouting! Bulk Packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong></br>
+					<strong>Optional Packaging: </strong>Black Velour Drawstring Pouch</br>
+					<strong>Weight: </strong>0.5oz</br>
+					<strong>Dimensions: </strong>3in x 0.6in x 0.6in</br>
+					<strong>Imprint Area: </strong>1.5in x 0.25in</br>
 					<strong>Product Code: </strong>MW
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">50</div>
 				<div class="prod-price-cell" align="center">$3.61</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -971,7 +833,7 @@
 				<div class="prod-price-cell" align="center">$3.40</div>
 				</section>
 				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -985,8 +847,8 @@
 					<figcaption class="product-name">
 						Mini Road Sign
 					</figcaption>
-					<figure>
-						<img id="img_MRS" src="img/products/MRS/MRS2.jpg" alt="Mini Road Sign">
+					<figure class="prod_figure">
+						<img id="img_MRS" src="img/products/MRS/MRS1.jpg" alt="Mini Road Sign">
 					</figure>
 				</div>
 			</label>
@@ -998,22 +860,23 @@
 	        	</div>
 				<script>
 					var img_MRS_index = 0;
-					var img_MRS_array = ['img/products/MRS/MRS2.jpg', 'img/products/MRS/MRS3.jpg', 'img/products/MRS/MRS1.jpg'];
+					var img_MRS_array = ['img/products/MRS/MRS1.jpg', 'img/products/MRS/MRS3.jpg', 'img/products/MRS/MRS2.jpg'];
 				</script>
-
+				
 				<p>
-					This whimsical mini road sign will remind everyone who is working for you! This playful sign is available in three colors and will sit up proudly, and fold flat for shipping. This novelty promotional item is a great fit in any workplace!
+					This whimsical mini road sign will remind everyone who is working for you! This playful sign is available in three colors and will sit up proudly, and fold flat for shipping. This novelty promotional item is a great fit in any workplace! Bulk packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong></br>
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>0.6oz</br>
+					<strong>Dimensions: </strong>2.5in x 4.13in</br>
+					<strong>Imprint Area: </strong>2.36in x 0.3in</br>
 					<strong>Product Code: </strong>MRS
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">55</div>
 				<div class="prod-price-cell" align="center">$3.47</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -1024,7 +887,7 @@
 				<div class="prod-price-cell" align="center">$3.27</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1038,25 +901,26 @@
 					<figcaption class="product-name">
 						Multi-Purpose Pocket Knife
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_K_MP" src="img/products/K-MP/MultiPocketKnife.jpg" alt="Multi-Purpose Pocket Knife">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Laser engraved multi-purpose pocket tool - Similar to a Swiss army knife, this multi-purpose pocket tool has 9 tools including a saw blade, cork screw, 2 screw drivers, scissors, bottle opener, 2 knife blades and a file. The handles are solid rosewood and the tools are stainless steel. Great employee or corporate gift or incentive item. Good item for Boy Scouts and Army, Navy, Airforce, Marines, Coast Guard and National Guard.
+					Laser engraved multi-purpose pocket tool - Similar to a Swiss army knife, this multi-purpose pocket tool has 9 tools including a saw blade, cork screw, 2 screw drivers, scissors, bottle opener, 2 knife blades and a file. The handles are solid rosewood and the tools are stainless steel. Great employee or corporate gift or incentive item. Good item for Boy Scouts and Army, Navy, Airforce, Marines, Coast Guard and National Guard. PVC Case.
 				</p>
 				<p>
-					<strong>Packaging: </strong>Optional black velour pouch</br>
-					<strong>Weight: </strong>0.26</br>
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>0.3</br>
+					<strong>Dimensions: </strong>3.7in x 1in x 0.7in</br>
 					<strong>Imprint Area: </strong>1.75 in x 0.5 in</br>
 					<strong>Product Code: </strong>K-MP
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">50</div>
 				<div class="prod-price-cell" align="center">$3.85</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -1067,7 +931,7 @@
 				<div class="prod-price-cell" align="center">$3.35</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1081,8 +945,8 @@
 					<figcaption class="product-name">
 						Multi-wood Pen
 					</figcaption>
-					<figure>
-						<img id="img_MP1" src="img/products/MP1/MultiWoodPen3.jpg" alt="Multi-wood Pen">
+					<figure class="prod_figure">
+						<img id="img_MP1" src="img/products/MP1/MultiWoodPen1.jpg" alt="Multi-wood Pen">
 					</figure>
 				</div>
 			</label>
@@ -1094,22 +958,23 @@
 	        	</div>
 				<script>
 					var img_MP1_index = 0;
-					var img_MP1_array = ['img/products/MP1/MultiWoodPen3.jpg', 'img/products/MP1/MultiWoodPen1.jpg', 'img/products/MP1/MultiWoodPen2.jpg'];
+					var img_MP1_array = ['img/products/MP1/MultiWoodPen1.jpg', 'img/products/MP1/MultiWoodPen2.jpg', 'img/products/MP1/MultiWoodPen3.jpg'];
 				</script>
-
+				
 				<p>
-					Laser engraved pen - Multi-colored wood ballpoint pen fashioned from walnut, rosewood, and maple wood with 22 carat gold plated trim. Great for corporate incentives or employee recognition gifts.
+					Laser engraved pen - Multi-colored wood ballpoint pen fashioned from walnut, rosewood, and maple wood with 22 carat gold plated trim. Great for corporate incentives or employee recognition gifts. Bulk packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong>Optional black velour pouch, acrylic case or acrylic tube.</br>
-					<strong>Weight: </strong>0.05</br>
-					<strong>Imprint Area: </strong>1.625 in x 0.25 in</br>
+					<strong>Optional Packaging: </strong>Black Velour Pen Pouch</br>
+					<strong>Weight: </strong>0.6</br>
+					<strong>Dimensions: </strong>5.5in x 0.5in</br>
+					<strong>Imprint Area: </strong>1.625in x 0.25in</br>
 					<strong>Product Code: </strong>MP1
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">30</div>
 				<div class="prod-price-cell" align="center">$6.67</div>
 				<div class="prod-quantity-cell" align="center">100</div>
@@ -1120,7 +985,7 @@
 				<div class="prod-price-cell" align="center">$6.28</div>
 				</section>
 				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1132,38 +997,33 @@
 			<label for="PCLIP" class="controller">
 				<div class="product-image">
 					<figcaption class="product-name">
-						Paperclip Holder
+						Paperclip Holder (CLOSEOUT)
 					</figcaption>
-					<figure>
-						<img id="img_PCLIP" src="img/products/PCLIP/PClipHolder.jpg" alt="Paperclip Holder">
+					<figure class="prod_figure">
+						<img id="img_PCLIP" src="img/products/PCLIP/PClipHolder.jpg" alt="Paperclip Holder (CLOSEOUT)">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Laser engrave paper clip holder - Made from solid genuine maple wood. Has a strong permanent magnet that securely holds your paper clips within reach. Great desk accessory for your employees or a corporate gift. Black cardboard gift box is included.
+					Laser engrave paper clip holder - Made from solid genuine maple wood. Has a strong permanent magnet that securely holds your paper clips within reach. Great desk accessory for your employees or a corporate gift. Black cardboard gift box is included. Bulk Packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong>Black cardboard gift box.</br>
+					<strong>Optional Packaging: </strong>None</br>
 					<strong>Weight: </strong>0.4</br>
-					<strong>Imprint Area: </strong>1.5 in x 2.5 in</br>
+					<strong>Dimensions: </strong>2in x 2in x 3in</br>
+					<strong>Imprint Area: </strong>1.5in x 2.5in</br>
 					<strong>Product Code: </strong>PCLIP
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
-				<div class="prod-quantity-cell" align="center">30</div>
-				<div class="prod-price-cell" align="center">$6.20</div>
-				<div class="prod-quantity-cell" align="center">100</div>
-				<div class="prod-price-cell" align="center">$6.07</div>
-				<div class="prod-quantity-cell" align="center">250</div>
-				<div class="prod-price-cell" align="center">$5.93</div>
-				<div class="prod-quantity-cell" align="center">500</div>
-				<div class="prod-price-cell" align="center">$5.80</div>
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
+				<div class="prod-quantity-cell" align="center">50</div>
+				<div class="prod-price-cell" align="center">$2.63</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1177,25 +1037,26 @@
 					<figcaption class="product-name">
 						Rosewood Key Ring
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_RKR" src="img/products/RKR/RosewoodKeyRing.jpg" alt="Rosewood Key Ring">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Laser engraved key ring - This keychain is fashioned from solid pieces of select rosewood with a polished double plated silver color trim. Satin coated to protect wood. Great employee incentive or corporate gift. Quality giveaway to promote your business.
+					Laser engraved key ring - This keychain is fashioned from solid pieces of select rosewood with a polished double plated silver color trim. Satin coated to protect wood. Great employee incentive or corporate gift. Quality giveaway to promote your business. Black gift boxpPackaging..
 				</p>
 				<p>
-					<strong>Packaging: </strong>Optional deluxe black cardboard gift box with velour insert or velour pouch.</br>
-					<strong>Weight: </strong>0.07</br>
-					<strong>Imprint Area: </strong>1.375 in x 0.625 in</br>
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>.32</br>
+					<strong>Dimensions: </strong>3.5in x 0.1in x 1.2in</br>
+					<strong>Imprint Area: </strong>1.375in x 0.625 in</br>
 					<strong>Product Code: </strong>RKR
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">50</div>
 				<div class="prod-price-cell" align="center">$3.78</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -1206,50 +1067,7 @@
 				<div class="prod-price-cell" align="center">$3.56</div>
 				</section>
 				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
-				</p>
-				<p>
-					Setup Fee $50.00 (V)
-				</p>
-			</aside>
-		</section>
-		<input type="checkbox" id="ROSEWKNIFE-S">
-		<section class="product" id="nav-ROSEWKNIFE-S">
-			<label for="ROSEWKNIFE-S" class="controller">
-				<div class="product-image">
-					<figcaption class="product-name">
-						Rosewood Knife
-					</figcaption>
-					<figure>
-						<img id="img_ROSEWKNIFE_S" src="img/products/ROSEWKNIFE-S/ROSEWKNIFE-S.jpg" alt="Rosewood Knife">
-					</figure>
-				</div>
-			</label>
-			<aside class="product-info">
-				<p>
-					This rosewood key ring with convenient blade and bottle opener tools makes a small but powerful gift! Put your logo or sentiment on an item your customers will use and see every day! The tools are made from a metal alloy.
-				</p>
-				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong></br>
-					<strong>Product Code: </strong>ROSEWKNIFE-S
-				</p>
-				<section class=prod-pricing>
-					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
-				<div class="prod-quantity-cell" align="center">50</div>
-				<div class="prod-price-cell" align="center">$3.90</div>
-				<div class="prod-quantity-cell" align="center">200</div>
-				<div class="prod-price-cell" align="center">$3.83</div>
-				<div class="prod-quantity-cell" align="center">500</div>
-				<div class="prod-price-cell" align="center">$3.75</div>
-				<div class="prod-quantity-cell" align="center">1000</div>
-				<div class="prod-price-cell" align="center">$3.68</div>
-				</section>
-				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1263,25 +1081,26 @@
 					<figcaption class="product-name">
 						Rosewood Pen
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_RP" src="img/products/RP/RosewoodPen.jpg" alt="Rosewood Pen">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Laser engraved pen - This rosewood ballpoint pen is stylishly handcrafted with brilliant 22-carat gold plated trim. Pen comes complete with a refillable Cross (R) type black ballpoint cartridge.
+					Laser engraved pen - This rosewood ballpoint pen is stylishly handcrafted with brilliant 22-carat gold plated trim. Pen comes complete with a refillable Cross (R) type black ballpoint cartridge. PVC Box.
 				</p>
 				<p>
-					<strong>Packaging: </strong>Optional velour pouch, acrylic case or acrylic tube.</br>
-					<strong>Weight: </strong>0.05</br>
+					<strong>Optional Packaging: </strong>Black Velour Pen Pouch</br>
+					<strong>Weight: </strong>0.7</br>
+					<strong>Dimensions: </strong>5.5in x 0.5in</br>
 					<strong>Imprint Area: </strong>1.625 in x 0.25 in</br>
 					<strong>Product Code: </strong>RP
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">40</div>
 				<div class="prod-price-cell" align="center">$4.73</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -1292,7 +1111,7 @@
 				<div class="prod-price-cell" align="center">$4.45</div>
 				</section>
 				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1306,25 +1125,26 @@
 					<figcaption class="product-name">
 						Rosewood Wine Stopper
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_WSR" src="img/products/WSR/RosewoodWineStopper.jpg" alt="Rosewood Wine Stopper">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Laser engraved bottle stopper - Solid genuine rosewood top and natural cork imported from Portugal. The tapered corks fit most standard wine bottles. Great employee or corporate gift. 1.5 in diameter.
+					Laser engraved bottle stopper - Solid genuine rosewood top and natural cork imported from Portugal. The tapered corks fit most standard wine bottles. Great employee or corporate gift. 1.5 in diameter. Bulk Packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong>Optional black velour pouch.</br>
-					<strong>Weight: </strong>0.04</br>
-					<strong>Imprint Area: </strong>1.25 in x 1.25 in</br>
+					<strong>Optional Packaging: </strong>Black Velour Drawstring Pouch.</br>
+					<strong>Weight: </strong>0.5</br>
+					<strong>Dimensions: </strong>2in x 1.5in</br>
+					<strong>Imprint Area: </strong>1.25in x 1.25in</br>
 					<strong>Product Code: </strong>WSR
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">40</div>
 				<div class="prod-price-cell" align="center">$5.05</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -1335,7 +1155,51 @@
 				<div class="prod-price-cell" align="center">$4.76</div>
 				</section>
 				<p class="prod_options">
-					4R (Optional personalization $2.50 (V)/each).
+					Optional Personalization Fee $2.00ea (V)
+				</p>
+				<p>
+					Setup Fee $50.00 (V)
+				</p>
+			</aside>
+		</section>
+		<input type="checkbox" id="SJP">
+		<section class="product" id="nav-SJP">
+			<label for="SJP" class="controller">
+				<div class="product-image">
+					<figcaption class="product-name">
+						Super Jumbo Pencil
+					</figcaption>
+					<figure class="prod_figure">
+						<img id="img_SJP" src="img/products/SJP/SJP.jpg" alt="Super Jumbo Pencil">
+					</figure>
+				</div>
+			</label>
+			<aside class="product-info">
+				<p>
+					The Super Jumbo Pencil is made from real wood with a real eraser and real graphite point.  There is plenty of room to UV print your logo or sentiment on this promotional item.
+				</p>
+				<p>
+					<strong>Optional Packaging: </strong>None.</br>
+					<strong>Weight: </strong>6.3oz</br>
+					<strong>Dimensions: </strong>14in x 14in</br>
+					<strong>Imprint Area: </strong>46in x 3in</br>
+					<strong>Product Code: </strong>SJP
+				</p>
+				<section class=prod-pricing>
+					<div class="prod-quantity-cell" align="center">QTY</div>
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
+				<div class="prod-quantity-cell" align="center">40</div>
+				<div class="prod-price-cell" align="center">$4.94</div>
+				<div class="prod-quantity-cell" align="center">200</div>
+				<div class="prod-price-cell" align="center">$4.85</div>
+				<div class="prod-quantity-cell" align="center">500</div>
+				<div class="prod-price-cell" align="center">$4.75</div>
+				<div class="prod-quantity-cell" align="center">1000</div>
+				<div class="prod-price-cell" align="center">$4.66</div>
+				</section>
+				<p class="prod_options">
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1349,25 +1213,26 @@
 					<figcaption class="product-name">
 						Swing Thing
 					</figcaption>
-					<figure>
-						<img id="img_SWTH" src="img/products/SWTH/SwingThing.jpg" alt="Swing Thing">
+					<figure class="prod_figure">
+						<img id="img_SWTH" src="img/products/SWTH/Swth_silver.png" alt="Swing Thing">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Solar-powered decorative accessory. Perfect desk, office, or home décor item. Put your brand in motion with this best-selling patented technology. This unique promotional item never needs batteries and will last for years. Powered by hidden technology, your brand or logo will swing continuously in any light. This distinctive item makes an exceptional corporate or employee gift. Create a mesmerizing gift exclusive to your brand with two locations to customize: the swinging emblem and the label at the base. Packaged in a clear PVC box. Measures 1.5” x 1.5”x 2.4”.
+					Solar-powered decorative accessory. Perfect desk, office, or home décor item. Put your brand in motion with this best-selling patented technology. This unique promotional item never needs batteries and will last for years. Powered by hidden technology, your brand or logo will swing continuously in any light. This distinctive item makes an exceptional corporate or employee gift. Create a mesmerizing gift exclusive to your brand with two locations to customize: the swinging emblem and the label at the base. PVC Case.
 				</p>
 				<p>
-					<strong>Packaging: </strong>PET clear box with vacu-formed base</br>
-					<strong>Weight: </strong>0.0875</br>
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>1.0oz</br>
+					<strong>Dimensions: </strong>2.75in x 2.13in x 1.75in</br>
 					<strong>Imprint Area: </strong>Swinger: 1.34 in x 0.55 in. Label: 1.162 in x 0.532 in.</br>
 					<strong>Product Code: </strong>SWTH
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">250</div>
 				<div class="prod-price-cell" align="center">$5.83</div>
 				<div class="prod-quantity-cell" align="center">500</div>
@@ -1378,7 +1243,7 @@
 				<div class="prod-price-cell" align="center">$4.64</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1392,25 +1257,26 @@
 					<figcaption class="product-name">
 						Tic Tac Toe
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_TTT" src="img/products/TTT/TTT.jpg" alt="Tic Tac Toe">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					From the Roman Empire to yours! Tic Tac Toe was believed to be introduced around the first century B.C. Now you can meld classic and modern with this customizable wooden game board which comes with red and blue playing pieces. This item is perfect for those looking to return to a simple, logical foundation!
+					From the Roman Empire to yours! Tic Tac Toe was believed to be introduced around the first century B.C. Now you can meld classic and modern with this customizable wooden game board which comes with red and blue playing pieces. This item is perfect for those looking to return to a simple, logical foundation! Bulk packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong></br>
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>2.0oz</br>
+					<strong>Dimensions: </strong>3in x 4in</br>
+					<strong>Imprint Area: </strong>2.5in x 1in</br>
 					<strong>Product Code: </strong>TTT
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">40</div>
 				<div class="prod-price-cell" align="center">$6.33</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -1421,7 +1287,7 @@
 				<div class="prod-price-cell" align="center">$5.96</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1435,8 +1301,8 @@
 					<figcaption class="product-name">
 						Touch Stylus & Pen
 					</figcaption>
-					<figure>
-						<img id="img_SP" src="img/products/SP/StylusTouch-Pen-Black.jpg" alt="Touch Stylus & Pen">
+					<figure class="prod_figure">
+						<img id="img_SP" src="img/products/SP/SP-BL.jpg" alt="Touch Stylus & Pen">
 					</figure>
 				</div>
 			</label>
@@ -1448,22 +1314,23 @@
 	        	</div>
 				<script>
 					var img_SP_index = 0;
-					var img_SP_array = ['img/products/SP/StylusTouch-Pen-Black.jpg', 'img/products/SP/StylusTouch-Pen-White.jpg'];
+					var img_SP_array = ['img/products/SP/SP-BL.jpg', 'img/products/SP/StylusTouch-Pen-White.jpg', 'img/products/SP/Stylus Touch Pen-Pink.jpg', 'img/products/SP/Stylus Touch Pen-Green.jpg'];
 				</script>
-
+				
 				<p>
-					Black Laser Engraved Touch Stylus & Pen. Fully functional ball point pen with rubber tip for use with all touch screen products such as iPad, iPhone, Kindle, iPod, etc.
+					Black Laser Engraved Touch Stylus & Pen. Fully functional ball point pen with rubber tip for use with all touch screen products such as iPad, iPhone, Kindle, iPod, etc. Bulk packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong>Optional velour pouch, acrylic case or acrylic tube.</br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong>0.15 in x 1.6 in</br>
+					<strong>Optional Packaging: </strong>Black Velour Pen Pouch</br>
+					<strong>Weight: </strong>0.5oz</br>
+					<strong>Dimensions: </strong>0.25in x 5.50in</br>
+					<strong>Imprint Area: </strong>1.58in x 0.15in</br>
 					<strong>Product Code: </strong>SP
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">50</div>
 				<div class="prod-price-cell" align="center">$3.90</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -1474,7 +1341,7 @@
 				<div class="prod-price-cell" align="center">$3.68</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1488,7 +1355,7 @@
 					<figcaption class="product-name">
 						Wallet Tool
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_WTOOL" src="img/products/WTOOL/WTOOL1.jpg" alt="Wallet Tool">
 					</figure>
 				</div>
@@ -1503,20 +1370,21 @@
 					var img_WTOOL_index = 0;
 					var img_WTOOL_array = ['img/products/WTOOL/WTOOL1.jpg', 'img/products/WTOOL/WTOOL3.jpg', 'img/products/WTOOL/WTOOL2.jpg'];
 				</script>
-
+				
 				<p>
-					This practical, sleek item features 12 tools in a Slim Design! Measuring 4.25 x 1.625, your customers will take advantage of 3 screwdrivers, a letter opener, a saw blade, a bottle opener, a can opener, a file, a ruler, a cell phone stand, a knife edge and handy lanyard holes. Available in red, blue and green and your logo or sentiment is in eye-catching white. Makes a perfect promotional or appreciation gift for both men and women!
+					This practical, sleek item features 12 tools in a Slim Design! Your customers will take advantage of 3 screwdrivers, a letter opener, a saw blade, a bottle opener, a can opener, a file, a ruler, a cell phone stand, a knife edge and handy lanyard holes. Available in red, blue and green and your logo or sentiment is in eye-catching white. Makes a perfect promotional or appreciation gift for both men and women! Bulk packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong></br>
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>1.3oz</br>
+					<strong>Dimensions: </strong>2.13in x 3.5in</br>
+					<strong>Imprint Area: </strong>1in x 1.43in</br>
 					<strong>Product Code: </strong>WTOOL
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">50</div>
 				<div class="prod-price-cell" align="center">$3.97</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -1527,7 +1395,7 @@
 				<div class="prod-price-cell" align="center">$3.74</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1541,25 +1409,26 @@
 					<figcaption class="product-name">
 						Wine Tool
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_WT" src="img/products/WT/WT.png" alt="Wine Tool">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					The wine market is a $60 billion dollar industry, make sure you're part of it! Made of real wood and metal alloy, this wine tool features a corkscrew, two styles of bottle openers, a foil cutter, and plenty of room to engrave your logo or sentiment. This wine tool is the perfect gift for a wine enthusiast!
+					The wine market is a $60 billion dollar industry, make sure you're part of it! Made of real wood and metal alloy, this wine tool features a corkscrew, two styles of bottle openers, a foil cutter, and plenty of room to engrave your logo or sentiment. This wine tool is the perfect gift for a wine enthusiast! Bulk Packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong></br>
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>2.7oz</br>
+					<strong>Dimensions: </strong>1.5in x 5.13</br>
+					<strong>Imprint Area: </strong>1.75in x 0.5in</br>
 					<strong>Product Code: </strong>WT
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">35</div>
 				<div class="prod-price-cell" align="center">$6.94</div>
 				<div class="prod-quantity-cell" align="center">100</div>
@@ -1570,7 +1439,7 @@
 				<div class="prod-price-cell" align="center">$6.53</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1584,25 +1453,26 @@
 					<figcaption class="product-name">
 						Wood Slice Magnet
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_WSLICE" src="img/products/WSLICE/WSLICE.jpg" alt="Wood Slice Magnet">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					This is an actual slice of wood engraved with your logo or sentiment. No two will ever be identical! A round magnet on the back will allow your customers to keep this unique, rustic item for a long time. The average diameter is approximately 2.5.
+					This is an actual slice of wood engraved with your logo or sentiment. No two will ever be identical! A round magnet on the back will allow your customers to keep this unique, rustic item for a long time. The average diameter is approximately 2.5.Bulk Packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong></br>
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>0.8oz</br>
+					<strong>Dimensions: </strong>appx. 2.5in diameter</br>
+					<strong>Imprint Area: </strong>2in x 2in</br>
 					<strong>Product Code: </strong>WSLICE
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">50</div>
 				<div class="prod-price-cell" align="center">$4.34</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -1613,7 +1483,7 @@
 				<div class="prod-price-cell" align="center">$4.08</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1627,25 +1497,26 @@
 					<figcaption class="product-name">
 						Wood Slice Ornament
 					</figcaption>
-					<figure>
-						<img id="img_WSO" src="img/products/WSO/WSO.jpg" alt="Wood Slice Ornament">
+					<figure class="prod_figure">
+						<img id="img_WSO" src="img/products/WSO/WSO1.jpg" alt="Wood Slice Ornament">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					This is an actual slice of wood engraved with your logo or sentiment. No two will ever be identical! A round magnet on the back will allow your customers to keep this unique, rustic item for a long time. The average diameter is approximately 2.5.
+					Real wood slice with your laser engraved logo and five different color hang cords to choose from: black, gray, pink, purple, and blue. The average diameter is approximately 2.5 in. Bulk packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong></br>
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>0.6oz</br>
+					<strong>Dimensions: </strong>appx. 2.5in diameter</br>
+					<strong>Imprint Area: </strong>2in x 2in</br>
 					<strong>Product Code: </strong>WSO
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">50</div>
 				<div class="prod-price-cell" align="center">$4.34</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -1656,7 +1527,51 @@
 				<div class="prod-price-cell" align="center">$4.08</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
+				</p>
+				<p>
+					Setup Fee $50.00 (V)
+				</p>
+			</aside>
+		</section>
+		<input type="checkbox" id="HATPIN">
+		<section class="product" id="nav-HATPIN">
+			<label for="HATPIN" class="controller">
+				<div class="product-image">
+					<figcaption class="product-name">
+						Wood Souvenir Pin
+					</figcaption>
+					<figure class="prod_figure">
+						<img id="img_HATPIN" src="img/products/HATPIN/HATPIN1.jpg" alt="Wood Souvenir Pin">
+					</figure>
+				</div>
+			</label>
+			<aside class="product-info">
+				<p>
+					Real wood laser engraved pin.  Both the shape and the artwork are customizable, providing your customers with a truly unique promotional item.
+				</p>
+				<p>
+					<strong>Optional Packaging: </strong>Black Velour Drawstring Pouch</br>
+					<strong>Weight: </strong>Custom</br>
+					<strong>Dimensions: </strong>Custom</br>
+					<strong>Imprint Area: </strong>Custom</br>
+					<strong>Product Code: </strong>HATPIN
+				</p>
+				<section class=prod-pricing>
+					<div class="prod-quantity-cell" align="center">QTY</div>
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
+				<div class="prod-quantity-cell" align="center">50</div>
+				<div class="prod-price-cell" align="center">$3.81</div>
+				<div class="prod-quantity-cell" align="center">200</div>
+				<div class="prod-price-cell" align="center">$3.74</div>
+				<div class="prod-quantity-cell" align="center">500</div>
+				<div class="prod-price-cell" align="center">$3.67</div>
+				<div class="prod-quantity-cell" align="center">1000</div>
+				<div class="prod-price-cell" align="center">$3.59</div>
+				</section>
+				<p class="prod_options">
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1670,25 +1585,36 @@
 					<figcaption class="product-name">
 						Wooden Bottle Opener
 					</figcaption>
-					<figure>
-						<img id="img_BTLOPENER_WI" src="img/products/BTLOPENER-WI/BTLOPENER-WI.jpg" alt="Wooden Bottle Opener">
+					<figure class="prod_figure">
+						<img id="img_BTLOPENER_WI" src="img/products/BTLOPENER-WI/BTLOPENER-WI1.jpg" alt="Wooden Bottle Opener">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
+				<p class="alt_img_txt">Available Colors:</p>
+	        	<div class="img_options">
+	         		<button class="img_button" onclick="img_BTLOPENER_WI_index = prev_img('img_BTLOPENER_WI', img_BTLOPENER_WI_array, img_BTLOPENER_WI_index)">Prev</button>
+	        		<button class="img_button" onclick="img_BTLOPENER_WI_index = next_img('img_BTLOPENER_WI', img_BTLOPENER_WI_array, img_BTLOPENER_WI_index)">Next</button>
+	        	</div>
+				<script>
+					var img_BTLOPENER_WI_index = 0;
+					var img_BTLOPENER_WI_array = ['img/products/BTLOPENER-WI/BTLOPENER-WI1.jpg', 'img/products/BTLOPENER-WI/BTLOPENER-WI.jpg'];
+				</script>
+				
 				<p>
-					This bottle opener features a classic wood insert on each side, where your logo will stand out. Designed to open both bottles and cans with ease, this is a promotional item that will be used for years! This slim tool is 4.25� x 1.625� and made from a sturdy metal alloy. A great item for men and women, this makes a great corporate gift.
+					This bottle opener features a classic wood insert on each side (or a magnet insert on second side for $0.20 each). This slim tool is made from a sturdy metal alloy. A great item for men, women or a corporate gift. Bulk packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong>4.25 in x 1.625 in</br>
+					<strong>Optional Packaging: </strong></br>
+					<strong>Weight: </strong>1.9oz</br>
+					<strong>Dimensions: </strong>4.25in x 1.5in</br>
+					<strong>Imprint Area: </strong>2.25in x 0.75in</br>
 					<strong>Product Code: </strong>BTLOPENER-WI
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">50</div>
 				<div class="prod-price-cell" align="center">$4.39</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -1699,7 +1625,7 @@
 				<div class="prod-price-cell" align="center">$4.13</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1713,25 +1639,26 @@
 					<figcaption class="product-name">
 						Wooden Handle Bottle Opener
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_WHBO" src="img/products/WHBO/WHBO.jpg" alt="Wooden Handle Bottle Opener">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					This strong bottle opener offers a large engravable space to ensure that your logo really pops! Made of real wood and finished with a metal alloy, this solid bottle opener will be something your customers use for years! Perfect for opening craft beer and sodas alike!
+					This strong bottle opener offers a large engravable space to ensure that your logo really pops! Made of real wood and finished with a metal alloy, this solid bottle opener will be something your customers use for years! Perfect for opening craft beer and sodas alike! Bulk packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong></br>
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>1.6oz</br>
+					<strong>Dimensions: </strong>5.5in x 1.5in</br>
+					<strong>Imprint Area: </strong>3.5in x 0.75in</br>
 					<strong>Product Code: </strong>WHBO
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">50</div>
 				<div class="prod-price-cell" align="center">$4.39</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -1742,7 +1669,7 @@
 				<div class="prod-price-cell" align="center">$4.13</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1756,25 +1683,36 @@
 					<figcaption class="product-name">
 						Wooden Key Ring
 					</figcaption>
-					<figure>
-						<img id="img_MKR_WI" src="img/products/MKR-WI/MKR-WI.jpg" alt="Wooden Key Ring">
+					<figure class="prod_figure">
+						<img id="img_MKR_WI" src="img/products/MKR-WI/MKR-WI2.jpg" alt="Wooden Key Ring">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
+				<p class="alt_img_txt">Available Colors:</p>
+	        	<div class="img_options">
+	         		<button class="img_button" onclick="img_MKR_WI_index = prev_img('img_MKR_WI', img_MKR_WI_array, img_MKR_WI_index)">Prev</button>
+	        		<button class="img_button" onclick="img_MKR_WI_index = next_img('img_MKR_WI', img_MKR_WI_array, img_MKR_WI_index)">Next</button>
+	        	</div>
+				<script>
+					var img_MKR_WI_index = 0;
+					var img_MKR_WI_array = ['img/products/MKR-WI/MKR-WI2.jpg', 'img/products/MKR-WI/MKR-WI1.jpg'];
+				</script>
+				
 				<p>
-					This metal key ring features a classic wood on each side, where your logo will stand out. A beautiful, time-honored gift, this is a promotional item that will be used for years! This key ring is 4.25 x 1.625 is made from a sturdy metal alloy. A great item for men and women, this makes a great corporate gift.
+					This metal key ring features a classic wood on each side, where your logo will stand out. A beautiful, time-honored gift, this is a promotional item that will be used for years! This key ring is made from a sturdy metal alloy. A great item for men and women, this makes a great corporate gift. Bulk packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong>4.25 in x 1.625 in</br>
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>1.0oz</br>
+					<strong>Dimensions: </strong>4in x 1.25in</br>
+					<strong>Imprint Area: </strong>2.25in x 0.75in</br>
 					<strong>Product Code: </strong>MKR-WI
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">45</div>
 				<div class="prod-price-cell" align="center">$4.84</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -1785,50 +1723,7 @@
 				<div class="prod-price-cell" align="center">$4.56</div>
 				</section>
 				<p class="prod_options">
-					4R
-				</p>
-				<p>
-					Setup Fee $50.00 (V)
-				</p>
-			</aside>
-		</section>
-		<input type="checkbox" id="WFM-M">
-		<section class="product" id="nav-WFM-M">
-			<label for="WFM-M" class="controller">
-				<div class="product-image">
-					<figcaption class="product-name">
-						Wooden Mini Frame
-					</figcaption>
-					<figure>
-						<img id="img_WFM_M" src="img/products/WFM-M/WFM-M.jpg" alt="Wooden Mini Frame">
-					</figure>
-				</div>
-			</label>
-			<aside class="product-info">
-				<p>
-					See your customers here! This wood face mini frame has a magnet on the back. It will hold a picture that measures 1.75 x 2.5 and will allow your logo or sentiment to show clearly. A keepsake gift that will be treasured for years to come.
-				</p>
-				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong></br>
-					<strong>Product Code: </strong>WFM-M
-				</p>
-				<section class=prod-pricing>
-					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
-				<div class="prod-quantity-cell" align="center">55</div>
-				<div class="prod-price-cell" align="center">$3.47</div>
-				<div class="prod-quantity-cell" align="center">200</div>
-				<div class="prod-price-cell" align="center">$3.40</div>
-				<div class="prod-quantity-cell" align="center">500</div>
-				<div class="prod-price-cell" align="center">$3.33</div>
-				<div class="prod-quantity-cell" align="center">1000</div>
-				<div class="prod-price-cell" align="center">$3.27</div>
-				</section>
-				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1842,25 +1737,26 @@
 					<figcaption class="product-name">
 						Yo-yo
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="img_YOYO" src="img/products/YOYO/YOYO.jpg" alt="Yo-yo">
 					</figure>
 				</div>
 			</label>
 			<aside class="product-info">
 				<p>
-					Made of real wood, this yoyo is a simple, fun and classic way to show your appreciation. With a 2 inch diameter, your logo or sentiment will spin to your customers' delight! Makes a perfect gift for the kid in all of us!
+					Made of real wood, this yoyo is a simple, fun and classic way to show your appreciation. With a 2 inch diameter, your logo or sentiment will spin to your customers' delight! Makes a perfect gift for the kid in all of us! Bulk packaging.
 				</p>
 				<p>
-					<strong>Packaging: </strong></br>
-					<strong>Weight: </strong></br>
-					<strong>Imprint Area: </strong></br>
+					<strong>Optional Packaging: </strong>None</br>
+					<strong>Weight: </strong>1.8oz</br>
+					<strong>Dimensions: </strong>2in diameter</br>
+					<strong>Imprint Area: </strong>1.5in x 1.5in</br>
 					<strong>Product Code: </strong>YOYO
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
-
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
+			
 				<div class="prod-quantity-cell" align="center">40</div>
 				<div class="prod-price-cell" align="center">$4.94</div>
 				<div class="prod-quantity-cell" align="center">200</div>
@@ -1871,7 +1767,7 @@
 				<div class="prod-price-cell" align="center">$4.66</div>
 				</section>
 				<p class="prod_options">
-					4R
+					Optional Personalization Fee $2.00ea (V)
 				</p>
 				<p>
 					Setup Fee $50.00 (V)
@@ -1895,7 +1791,7 @@
     <div class="spacer"></div>
     <a href="http://www.umapp.org"><img src="img/member_logos/umapp.gif" alt="UMAPP Member"></a>
   </div>
-  <p>All rights reserved. &copy;company_name 2018</p>
+  <p>All rights reserved. &copy;Aspenline 2018</p>
 </footer>
 </body>
 </html>

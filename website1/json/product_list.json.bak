@@ -1,0 +1,470 @@
+{
+	"Baseball Bat" : {
+						"id"         : "BBAT",
+						"desc"       : "This 7.5 inch real wood baseball bat is a perfect memento for the sports enthusiast! This item features a high gloss, lacquer finish and is ideal for little league teams and sports themed events. Engrave your logo and hit the promotional gift out of the park! Bulk Packaging.",
+						"pack"       : "None",
+						"weight"     : "1.2oz",
+                        "dimensions" : "7.5in",
+						"imp_area"   : "1.5in x 0.5in",
+						"quantities" : [40, 200, 500, 1000],
+						"prices"     : [5.52, 5.41, 5.30, 5.19],
+						"options"    : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Bamboo Pen" :   {
+						"id"         : "BBPEN",
+						"desc"       : "Eco-friendly bamboo ball point pen with black ink. Chrome finished accents. Re-fillable with standard Parker type cartridge. Includes clear PVC box packaging.",
+						"pack"       : "Black Velour Pouch",
+						"weight"     : "0.6oz",
+                        "dimensions" : "0.5in x 0.5in x 5.5in",
+						"imp_area"   : "1.625in x 0.25in",
+						"quantities" : [60, 200, 500, 1000],
+						"prices"     : [3.21, 3.15, 3.08, 3.02],
+						"options"    : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Bat Pen" 	:    {
+						"id"         : "BATM",
+						"desc"       : "Laser engraved pen - Batter up! You will never strike out with this maple baseball bat pen. This is a one of a kind pen that will keep the season alive all year through. Great for little league teams and sports themed parties. Includes clear PVC box packaging.",
+						"pack"       : "Black Velour Pen Pouch",
+						"weight"     : "0.6oz",
+                        "dimensions" : "0.4in x 0.4in x 5.25in",
+						"imp_area"   : "1.625in x 0.25in",
+						"quantities" : [35, 100, 250, 500],
+						"prices"     : [6.07, 5.95, 5.83, 5.72],
+						"options"    : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Black Anodized Multi-purpose Tool" 	:    {
+						"id"         : "BMT",
+						"desc"       : "Laser engraved multi-purpose pocket tool - This multi-purpose pocket tool has 5 functions including a cork screw, screw driver, bottle opener, knife blade and a can opener. Features a durable matte black anodized finish and the tools are stainless steel. Great employee or corporate gift or incentive item. When opened, knife is 6in long. Bulk packaging.",
+						"pack"       : "Black Velour Drawstring Pouch",
+						"weight"     : "1.9oz",
+                        "dimensions" : "3.5in x 1in x 0.3in",
+						"imp_area"   : "1.75 in x 0.5 in",
+						"quantities" : [50, 200, 500, 1000],
+						"prices"     : [3.82, 3.75, 3.67, 3.60],
+						"options"    : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+    "Black Key Ring Pocket Tool"     :    {
+                        "id"         : "BKR",
+                        "desc"       : "This tool is equipped with 3 stainless steel tools: Nail File, Scissors, and Phillips Head Screwdriver. Durable Hi Tec Black Anodized Finish allows for clean crisp laser engraving.",
+                        "pack"       : "Black Velour Drawstring Pouch",
+                        "weight"     : "1.1oz",
+                        "dimensions" : "3.75in x 0.25in",
+                        "imp_area"   : "2 in x 0.5 in",
+                        "quantities" : [70, 250, 500, 1000],
+                        "prices"     : [2.72, 2.66, 2.61, 2.56],
+                        "options"    : "Optional Personalization Fee $2.00ea (V)",
+                        "setup_fee"  : "50.00"
+                     },
+
+
+	"Knife Key Ring"    : {
+						"id"		 : "K-KR",
+						"desc"		 : "Laser engraved key ring - This handy pocket tool has 3 chrome plated tools including a knife blade, scissors, a file, and a key ring too. The rosewood handles are gloss coated to protect the wood finish. Great employee gift or corporote giveaway. When opened, knife is 3.75in long. Matte black gift box included.",
+						"pack"		 : "Black Velour Drawstring Pouch.",
+						"weight"	 : "1.1oz",
+                        "dimensions" : "2.2in x 0.8in x 0.3in",
+						"imp_area"	 : "2in x 0.4in",
+						"quantities" : [70,250,500,1000],
+						"prices"     : [2.72, 2.66, 2.61, 2.56],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Leather Key Ring"        : {
+						"id"		 : "LKR",
+						"desc"		 : "Available in four trendy colors, and with your logo/sentiment beautifully engraved creates a lasting, elegant gift. This key ring is made of pliable leatherette—which means no scratching or tearing. This classic item makes a great incentive or corporate gift. Bulk packaging.",
+						"pack"		 : "Black Velour Drawstring Pouch",
+						"weight"	 : "0.3oz",
+                        "dimensions" : "3.6in x 0.1in x 1.3in",
+						"imp_area"	 : "1.75in x 1in",
+						"quantities" : [50,200,500,1000],
+						"prices"     : [4.51, 4.42, 4.33, 4.25],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+    "Lockback Knife"        : {
+                        "id"         : "BPK",
+                        "desc"       : "Stainless steel partial serrated blade with a blade lock and sturdy pocket clip.  Overall length when opened is 7.5 inches.",
+                        "pack"       : "None",
+                        "weight"     : "1.9oz",
+                        "dimensions" : "4.5in  x 0.5in",
+                        "imp_area"   : "2.5in x 0.25in",
+                        "quantities" : [25,100,250,500],
+                        "prices"     : [7.25, 7.08, 6.92, 6.75],
+                        "options"    : "Optional Personalization Fee $2.00ea (V)",
+                        "setup_fee"  : "50.00"
+                     },
+
+	"Maple Letter Opener (CLOSEOUT)"    : {
+						"id"		 : "LOM",
+						"desc"		 : "Laser engraved letter opener - Made from solid genuine maple wood and features a handcrafted 22-carat gold plated trim for a fashionable look. Great for employee appreciation/recognition or business appreciation gift. Bulk packaging.",
+						"pack"		 : "Black Velour Drawstring Pouch",
+						"weight"	 : "0.7oz",
+                        "dimensions" : "5.5in x 0.5in",
+						"imp_area"	 : "1.625in x 0.25in",
+						"quantities" : [50],
+						"prices"     : [2.58],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Maple Pen"    : {
+						"id"		 : "MP",
+						"desc"		 : "Laser engraved pen - This maple-wood ballpoint pen is stylishly handcrafted with brilliant 22-carat gold plated trim. Pen comes complete with a refillable Cross (R) type black ballpoint cartridge. Includes clear PVC box packaging.",
+						"pack"		 : "Black Velour Drawstring Pouch",
+						"weight"	 : "0.6oz",
+                        "dimensions" : "5.5in x 0.5in",
+						"imp_area"	 : "1.625in x 0.25in",
+						"quantities" : [40,200,500,1000],
+						"prices"     : [4.99, 4.89, 4.80, 4.70],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Maple Lighter Cover"    : {
+						"id"		 : "LCM",
+						"desc"		 : "Our maple lighter cover is fashioned from real wood and allows for a large space to engrave your logo or sentiment. Lighters are not included with this vintage-inspired executive gift. Includes clear PVC box packaging.",
+						"pack"		 : "Black Velour Drawstring Pouch",
+						"weight"	 : "0.6oz",
+                        "dimensions" : "3.25in x 1in x 0.5in",
+						"imp_area"	 : "2.25in x 0.85in",
+						"quantities" : [40,200,500,1000],
+						"prices"     : [4.77, 4.68, 4.58, 4.49],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Maple Wine Stopper"    : {
+						"id"		 : "WSM",
+						"desc"		 : "Laser engraved bottle stopper - Solid maple top and natural cork imported from Portugal. The tapered corks fit most standard wine bottles. Great employee or corporate gift. 1.5 in diameter. Bulk Packaging.",
+						"pack"		 : "Black Velour Drawstring Pouch",
+						"weight"	 : "0.5oz",
+                        "dimensions" : "2in x 1.5in",
+						"imp_area"	 : "1.25in x 1.25in",
+						"quantities" : [40,200,500,1000],
+						"prices"     : [5.05, 4.95, 4.86, 4.76],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Metal Bottle Opener"    : {
+						"id"		 : "BTLOPENER-MI",
+						"desc"		 : "This bottle opener features a colorful metal insert on each side (or a magnet insert on second side for $0.20 each). This slim tool is made from a sturdy metal alloy. A great item for men, women or a corporate gift. Bulk packaging.",
+						"pack"		 : "None",
+						"weight"	 : "1.9oz",
+                        "dimensions" : "4.25in x 1.5in",
+						"imp_area"	 : "2.25in x 0.75in",
+						"quantities" : [40,200,500,1000],
+						"prices"     : [6.16, 6.04, 5.92, 5.80],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Metal Key Ring"         : {
+						"id"		 : "MKR-MI",
+						"desc"		 : "This metal key ring features a colorful metal insert on each side, where your logo will stand out. A beautiful, time-honored gift, this is a promotional item that will be used for years! This key ring is available in four colors and made from a sturdy metal alloy. A great item for men and women, this makes a great corporate gift. Bulk packaging.",
+						"pack"		 : "Velour Pouch",
+						"weight"	 : "1.0oz",
+                        "dimensions" : "4in x 1.25in",
+						"imp_area"	 : "2.25in x 0.75in",
+						"quantities" : [45,200,500,1000],
+						"prices"     : [4.84, 4.74, 4.65, 4.56],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Metal Pocket Tool"    : {
+						"id"		 : "MPT",
+						"desc"		 : "Laser engraved key ring - This handy metal pocket tool has a high quality anodized aluminum case and stainless steel tools including scissors, can opener, file, knife blade, flat head screw driver and ruler. Keep your company name in their pocket. Comes in 4 stylish colors and can be engraved on both sides. Bulk Packaging.",
+						"pack"		 : "Black Velour Drawstring Pouch",
+						"weight"	 : "1.8oz",
+                        "dimensions" : "4in x 1.25in",
+						"imp_area"	 : "1.875 in x 0.8 in",
+						"quantities" : [50,200,500,1000],
+						"prices"     : [3.68, 3.61, 3.54, 3.46],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Metal Whistle"    : {
+						"id"		 : "MW",
+						"desc"		 : "Fun for kids, smart for adults! This anodized metal whistle is a perfect promotional item for hikers and campers! Your logo or sentiment will stand out in white ink against any of the four bright colors available. Great item for scouting! Bulk Packaging.",
+						"pack"		 : "Black Velour Drawstring Pouch",
+						"weight"	 : "0.5oz",
+                        "dimensions" : "3in x 0.6in x 0.6in",
+						"imp_area"	 : "1.5in x 0.25in",
+						"quantities" : [50,200,500,1000],
+						"prices"     : [3.61, 3.54, 3.47, 3.40],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Mini Road Sign"		: {
+						"id"		 : "MRS",
+						"desc"		 : "This whimsical mini road sign will remind everyone who is working for you! This playful sign is available in three colors and will sit up proudly, and fold flat for shipping. This novelty promotional item is a great fit in any workplace! Bulk packaging.",
+						"pack"		 : "None",
+						"weight"	 : "0.6oz",
+                        "dimensions" : "2.5in x 4.13in",
+						"imp_area"	 : "2.36in x 0.3in",
+						"quantities" : [55,200,500,1000],
+						"prices"     : [3.47, 3.40, 3.33, 3.27],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+		},
+
+	"Multi-Purpose Pocket Knife"     : {
+						"id"		 : "K-MP",
+						"desc"		 : "Laser engraved multi-purpose pocket tool - Similar to a Swiss army knife, this multi-purpose pocket tool has 9 tools including a saw blade, cork screw, 2 screw drivers, scissors, bottle opener, 2 knife blades and a file. The handles are solid rosewood and the tools are stainless steel. Great employee or corporate gift or incentive item. Good item for Boy Scouts and Army, Navy, Airforce, Marines, Coast Guard and National Guard. PVC Case.",
+						"pack"		 : "None",
+						"weight"	 : "0.3",
+                        "dimensions" : "3.7in x 1in x 0.7in",
+						"imp_area"	 : "1.75 in x 0.5 in",
+						"quantities" : [50,200,500,1000],
+						"prices"     : [3.85, 3.75, 3.55, 3.35],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Multi-wood Pen"    : {
+						"id"		 : "MP1",
+						"desc"		 : "Laser engraved pen - Multi-colored wood ballpoint pen fashioned from walnut, rosewood, and maple wood with 22 carat gold plated trim. Great for corporate incentives or employee recognition gifts. Bulk packaging.",
+						"pack"		 : "Black Velour Pen Pouch",
+						"weight"	 : "0.6",
+                        "dimensions" : "5.5in x 0.5in",
+						"imp_area"	 : "1.625in x 0.25in",
+						"quantities" : [30,100,250,500],
+						"prices"     : [6.67, 6.54, 6.41, 6.28],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Paperclip Holder (CLOSEOUT)"    : {
+						"id"		 : "PCLIP",
+						"desc"		 : "Laser engrave paper clip holder - Made from solid genuine maple wood. Has a strong permanent magnet that securely holds your paper clips within reach. Great desk accessory for your employees or a corporate gift. Black cardboard gift box is included. Bulk Packaging.",
+						"pack"		 : "None",
+						"weight"	 : "0.4",
+                        "dimensions" : "2in x 2in x 3in",
+						"imp_area"	 : "1.5in x 2.5in",
+						"quantities" : [50],
+						"prices"     : [2.63],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Rosewood Key Ring"    : {
+						"id"		 : "RKR",
+						"desc"		 : "Laser engraved key ring - This keychain is fashioned from solid pieces of select rosewood with a polished double plated silver color trim. Satin coated to protect wood. Great employee incentive or corporate gift. Quality giveaway to promote your business. Black gift boxpPackaging..",
+						"pack"		 : "None",
+						"weight"	 : ".32",
+                        "dimensions" : "3.5in x 0.1in x 1.2in",
+						"imp_area"	 : "1.375in x 0.625 in",
+						"quantities" : [50, 200, 500, 1000],
+						"prices"     : [3.78, 3.71, 3.64, 3.56],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Rosewood Pen"    : {
+						"id"		 : "RP",
+						"desc"		 : "Laser engraved pen - This rosewood ballpoint pen is stylishly handcrafted with brilliant 22-carat gold plated trim. Pen comes complete with a refillable Cross (R) type black ballpoint cartridge. PVC Box.",
+						"pack"		 : "Black Velour Pen Pouch",
+						"weight"	 : "0.7",
+                        "dimensions" : "5.5in x 0.5in",
+						"imp_area"	 : "1.625 in x 0.25 in",
+						"quantities" : [40, 200, 500, 1000],
+						"prices"     : [4.73, 4.64, 4.55, 4.45],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Rosewood Wine Stopper"    : {
+						"id"		 : "WSR",
+						"desc"		 : "Laser engraved bottle stopper - Solid genuine rosewood top and natural cork imported from Portugal. The tapered corks fit most standard wine bottles. Great employee or corporate gift. 1.5 in diameter. Bulk Packaging.",
+						"pack"		 : "Black Velour Drawstring Pouch.",
+						"weight"	 : "0.5",
+                        "dimensions" : "2in x 1.5in",
+						"imp_area"	 : "1.25in x 1.25in",
+						"quantities" : [40, 200, 500, 1000],
+						"prices"     : [5.05, 4.95, 4.86, 4.76],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+ 
+  "Super Jumbo Pencil"    : {
+                        "id"         : "SJP",
+                        "desc"       : "The Super Jumbo Pencil is made from real wood with a real eraser and real graphite point.  There is plenty of room to UV print your logo or sentiment on this promotional item.",
+                        "pack"       : "None.",
+                        "weight"     : "6.3oz",
+                        "dimensions" : "14in x 14in",
+                        "imp_area"   : "46in x 3in",
+                        "quantities" : [40, 200, 500, 1000],
+                        "prices"     : [4.94, 4.85, 4.75, 4.66],
+                        "options"    : "Optional Personalization Fee $2.00ea (V)",
+                        "setup_fee"  : "50.00"
+                     },
+ 
+	"Swing Thing"    : {
+						"id"		 : "SWTH",
+						"desc"		 : "Solar-powered decorative accessory. Perfect desk, office, or home décor item. Put your brand in motion with this best-selling patented technology. This unique promotional item never needs batteries and will last for years. Powered by hidden technology, your brand or logo will swing continuously in any light. This distinctive item makes an exceptional corporate or employee gift. Create a mesmerizing gift exclusive to your brand with two locations to customize: the swinging emblem and the label at the base. PVC Case.",
+						"pack"		 : "None",
+						"weight"	 : "1.0oz",
+                        "dimensions" : "2.75in x 2.13in x 1.75in",
+						"imp_area"	 : "Swinger: 1.34 in x 0.55 in. Label: 1.162 in x 0.532 in.",
+						"quantities" : [250, 500, 1000, 2500],
+						"prices"     : [5.83, 5.42, 5.02, 4.64],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Tic Tac Toe"    : {
+						"id"		 : "TTT",
+						"desc"		 : "From the Roman Empire to yours! Tic Tac Toe was believed to be introduced around the first century B.C. Now you can meld classic and modern with this customizable wooden game board which comes with red and blue playing pieces. This item is perfect for those looking to return to a simple, logical foundation! Bulk packaging.",
+						"pack"		 : "None",
+						"weight"	 : "2.0oz",
+                        "dimensions" : "3in x 4in",
+						"imp_area"	 : "2.5in x 1in",
+						"quantities" : [40, 200, 500, 1000],
+						"prices"     : [6.33, 6.21, 6.08, 5.96],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Touch Stylus & Pen"    : {
+						"id"		 : "SP",
+						"desc"		 : "Black Laser Engraved Touch Stylus & Pen. Fully functional ball point pen with rubber tip for use with all touch screen products such as iPad, iPhone, Kindle, iPod, etc. Bulk packaging.",
+						"pack"		 : "Black Velour Pen Pouch",
+						"weight"	 : "0.5oz",
+                        "dimensions" : "0.25in x 5.50in",
+						"imp_area"	 : "1.58in x 0.15in",
+						"quantities" : [50, 200, 500, 1000],
+						"prices"     : [3.90, 3.83, 3.75, 3.68],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Wallet Tool"    : {
+						"id"		 : "WTOOL",
+						"desc"		 : "This practical, sleek item features 12 tools in a Slim Design! Your customers will take advantage of 3 screwdrivers, a letter opener, a saw blade, a bottle opener, a can opener, a file, a ruler, a cell phone stand, a knife edge and handy lanyard holes. Available in red, blue and green and your logo or sentiment is in eye-catching white. Makes a perfect promotional or appreciation gift for both men and women! Bulk packaging.",
+						"pack"		 : "None",
+						"weight"	 : "1.3oz",
+                        "dimensions" : "2.13in x 3.5in",
+						"imp_area"	 : "1in x 1.43in",
+						"quantities" : [50,200,500,1000],
+						"prices"     : [3.97, 3.89, 3.82, 3.74],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Wine Tool"    : {
+						"id"		 : "WT",
+						"desc"		 : "The wine market is a $60 billion dollar industry, make sure you're part of it! Made of real wood and metal alloy, this wine tool features a corkscrew, two styles of bottle openers, a foil cutter, and plenty of room to engrave your logo or sentiment. This wine tool is the perfect gift for a wine enthusiast! Bulk Packaging.",
+						"pack"		 : "None",
+						"weight"	 : "2.7oz",
+                        "dimensions" : "1.5in x 5.13",
+						"imp_area"	 : "1.75in x 0.5in",
+						"quantities" : [35,100,250,500],
+						"prices"     : [6.94, 6.80, 6.67, 6.53],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Wood Slice Magnet"    : {
+						"id"		 : "WSLICE",
+						"desc"		 : "This is an actual slice of wood engraved with your logo or sentiment. No two will ever be identical! A round magnet on the back will allow your customers to keep this unique, rustic item for a long time. The average diameter is approximately 2.5.Bulk Packaging.",
+						"pack"		 : "None",
+						"weight"	 : "0.8oz",
+                        "dimensions" : "appx. 2.5in diameter",
+						"imp_area"	 : "2in x 2in",
+						"quantities" : [50,200,500,1000],
+						"prices"     : [4.34, 4.25, 4.17, 4.08],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Wood Slice Ornament"    : {
+						"id"		 : "WSO",
+						"desc"		 : "Real wood slice with your laser engraved logo and five different color hang cords to choose from: black, gray, pink, purple, and blue. The average diameter is approximately 2.5 in. Bulk packaging.",
+						"pack"		 : "None",
+						"weight"	 : "0.6oz",
+                        "dimensions" : "appx. 2.5in diameter",
+						"imp_area"	 : "2in x 2in",
+						"quantities" : [50,200,500,1000],
+						"prices"     : [4.34, 4.25, 4.17, 4.08],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Wooden Bottle Opener"    : {
+						"id"		 : "BTLOPENER-WI",
+						"desc"		 : "This bottle opener features a classic wood insert on each side (or a magnet insert on second side for $0.20 each). This slim tool is made from a sturdy metal alloy. A great item for men, women or a corporate gift. Bulk packaging.",
+						"pack"		 : "",
+						"weight"	 : "1.9oz",
+                        "dimensions" : "4.25in x 1.5in",
+						"imp_area"	 : "2.25in x 0.75in",
+						"quantities" : [50,200,500,1000],
+						"prices"     : [4.39, 4.30, 4.22, 4.13],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Wooden Handle Bottle Opener"    : {
+						"id"		 : "WHBO",
+						"desc"		 : "This strong bottle opener offers a large engravable space to ensure that your logo really pops! Made of real wood and finished with a metal alloy, this solid bottle opener will be something your customers use for years! Perfect for opening craft beer and sodas alike! Bulk packaging.",
+						"pack"		 : "None",
+						"weight"	 : "1.6oz",
+                        "dimensions" : "5.5in x 1.5in",
+						"imp_area"	 : "3.5in x 0.75in",
+						"quantities" : [50,200,500,1000],
+						"prices"     : [4.39, 4.30, 4.22, 4.13],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+	"Wooden Key Ring" : {
+						"id"		 : "MKR-WI",
+						"desc"		 : "This metal key ring features a classic wood on each side, where your logo will stand out. A beautiful, time-honored gift, this is a promotional item that will be used for years! This key ring is made from a sturdy metal alloy. A great item for men and women, this makes a great corporate gift. Bulk packaging.",
+						"pack"		 : "None",
+						"weight"	 : "1.0oz",
+                        "dimensions" : "4in x 1.25in",
+						"imp_area"	 : "2.25in x 0.75in",
+						"quantities" : [45,200,500,1000],
+						"prices"     : [4.84, 4.74, 4.65, 4.56],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 },
+
+ "Wood Souvenir Pin"    : {
+                        "id"         : "HATPIN",
+                        "desc"       : "Real wood laser engraved pin.  Both the shape and the artwork are customizable, providing your customers with a truly unique promotional item.",
+                        "pack"       : "Black Velour Drawstring Pouch",
+                        "weight"     : "Custom",
+                        "dimensions" : "Custom",
+                        "imp_area"   : "Custom",
+                        "quantities" : [50, 200, 500, 1000],
+                        "prices"     : [3.81, 3.74, 3.67, 3.59],
+                        "options"    : "Optional Personalization Fee $2.00ea (V)",
+                        "setup_fee"  : "50.00"
+                     },
+
+	"Yo-yo"    : {
+						"id"		 : "YOYO",
+						"desc"		 : "Made of real wood, this yoyo is a simple, fun and classic way to show your appreciation. With a 2 inch diameter, your logo or sentiment will spin to your customers' delight! Makes a perfect gift for the kid in all of us! Bulk packaging.",
+						"pack"		 : "None",
+						"weight"	 : "1.8oz",
+                        "dimensions" : "2in diameter",
+						"imp_area"	 : "1.5in x 1.5in",
+						"quantities" : [40,200,500,1000],
+						"prices"     : [4.94, 4.85, 4.75, 4.66],
+						"options"	 : "Optional Personalization Fee $2.00ea (V)",
+						"setup_fee"  : "50.00"
+					 }
+}

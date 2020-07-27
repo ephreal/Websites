@@ -5,7 +5,7 @@ import os
 
 # Note to future self (2-4 days from 5/21/18):
 # What confuses you here? Comment it.
-# I'm not sure what is confusing at 
+# I'm not sure what is confusing at
 # the moment because I just wrote this
 # and it makes perfect sense to me.
 def product_html():
@@ -24,19 +24,20 @@ def product_html():
 
 	for product in product_names:
 
-		prod_id        = all_products[product]["id"]
-		prod_desc      = all_products[product]["desc"]
-		prod_packaging = all_products[product]["pack"]
-		prod_weight    = all_products[product]["weight"]
-		prod_area      = all_products[product]["imp_area"]
-		prod_qty       = all_products[product]["quantities"]
-		prod_price     = all_products[product]["prices"]
-		prod_options   = all_products[product]["options"]
-		prod_setup     = all_products[product]["setup_fee"]
-		prod_items	   = os.listdir(f"{prod_folder}/{prod_id}")
+		prod_id         = all_products[product]["id"]
+		prod_desc       = all_products[product]["desc"]
+		prod_packaging  = all_products[product]["pack"]
+		prod_weight     = all_products[product]["weight"]
+		prod_dimensions = all_products[product]["dimensions"]
+		prod_area       = all_products[product]["imp_area"]
+		prod_qty        = all_products[product]["quantities"]
+		prod_price      = all_products[product]["prices"]
+		prod_options    = all_products[product]["options"]
+		prod_setup      = all_products[product]["setup_fee"]
+		prod_items	    = os.listdir(f"{prod_folder}/{prod_id}")
 
 		# Create a product ID that doesn't use '-'.
-		# Using '-' screws up the ability to create a 
+		# Using '-' screws up the ability to create a
 		# javascript variable out of it.
 		img_id	 	   = f"img_{prod_id}".replace('-', '_')
 
@@ -49,7 +50,7 @@ def product_html():
 					<figcaption class="product-name">
 						{product}
 					</figcaption>
-					<figure>
+					<figure class="prod_figure">
 						<img id="{img_id}" src="img/products/{prod_id}/{prod_items[0]}" alt="{product}">
 					</figure>
 				</div>
@@ -80,14 +81,15 @@ def product_html():
 					{prod_desc}
 				</p>
 				<p>
-					<strong>Packaging: </strong>{prod_packaging}</br>
+					<strong>Optional Packaging: </strong>{prod_packaging}</br>
 					<strong>Weight: </strong>{prod_weight}</br>
+					<strong>Dimensions: </strong>{prod_dimensions}</br>
 					<strong>Imprint Area: </strong>{prod_area}</br>
 					<strong>Product Code: </strong>{prod_id}
 				</p>
 				<section class=prod-pricing>
 					<div class="prod-quantity-cell" align="center">QTY</div>
-					<div class="prod-price-cell" align="center">PRICE</div>
+					<div class="prod-price-cell" align="center">PRICE (R)</div>
 			"""
 
 		# Create the product amounts and prices chart
